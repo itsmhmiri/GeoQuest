@@ -32,6 +32,49 @@ export type GameModeId =
 
 export type TimerType = 'countdown' | 'stopwatch' | 'zen';
 
+export type DifficultyLevel = 'regular' | 'medium' | 'hard';
+
+export interface UserActivityRecord {
+  id: string;
+  timestamp: number;
+  mode: GameModeId;
+  modeTitle: string;
+  summary: string;
+  details: string;
+  metricValue: number;
+  metricLabel: string;
+  isNewBest?: boolean;
+}
+
+export interface BestRecords {
+  conquestBestCount: number;
+  conquestBestTimeSec: number | null;
+  vanishingBestCount: number;
+  vanishingTotalClears: number;
+  capitalBlitzHighScore: number;
+  capitalBlitzMaxStreak: number;
+  higherLowerBestStreak: number;
+  higherLowerPopulationBestStreak: number;
+  higherLowerAreaBestStreak: number;
+  higherLowerTotalCorrect: number;
+  bridgeTotalCompleted: number;
+  bridgeShortestSteps: number | null;
+  flagHunterHighScore: number;
+  flagHunterMaxStreak: number;
+  totalGamesPlayed: number;
+  totalCountriesDiscovered: number;
+}
+
+export interface AchievementItem {
+  id: string;
+  title: string;
+  description: string;
+  category: 'exploration' | 'speed' | 'knowledge' | 'mastery';
+  icon: string;
+  progress: number; // 0..100
+  unlockedAt: number | null;
+}
+
 export interface GameStats {
   gamesPlayed: number;
   countriesDiscoveredTotal: number;

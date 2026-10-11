@@ -1,4 +1,4 @@
-import { geoNaturalEarth1, geoPath } from 'd3-geo';
+import { geoNaturalEarth1, geoPath, geoGraticule } from 'd3-geo';
 import { feature } from 'topojson-client';
 import countries50m from 'world-atlas/countries-50m.json';
 import { COUNTRIES, COUNTRIES_BY_ID, COUNTRIES_BY_NUMERIC_ID } from '../data/countries';
@@ -14,6 +14,11 @@ export const projection = geoNaturalEarth1()
   .translate([MAP_BASE_WIDTH / 2, MAP_BASE_HEIGHT / 2]);
 
 export const pathGenerator = geoPath(projection);
+
+// Cartographic graticules (lat/long grid) and earth boundary outline
+const graticuleGenerator = geoGraticule().step([30, 30]);
+export const graticulePath = pathGenerator(graticuleGenerator()) || '';
+export const spherePath = pathGenerator({ type: 'Sphere' }) || '';
 
 export interface ProjectedCountry {
   country: CountryRecord;

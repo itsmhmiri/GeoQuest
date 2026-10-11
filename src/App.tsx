@@ -12,7 +12,8 @@ import { FlagHunter } from './components/Modes/FlagHunter';
 import { AtlasPanel } from './components/Atlas/AtlasPanel';
 import { ComparisonTable } from './components/Atlas/ComparisonTable';
 import { Flashcards } from './components/Atlas/Flashcards';
-import { Map, Table2, Layers, BookOpen } from 'lucide-react';
+import { RecordsModal } from './components/Modals/RecordsModal';
+import { Map, Table2, Layers } from 'lucide-react';
 
 export default function App() {
   const {
@@ -33,6 +34,8 @@ export default function App() {
     submitFlagGuess,
     atlasSubTab,
     setAtlasSubTab,
+    recordsModalOpen,
+    setRecordsModalOpen,
   } = useGameStore();
 
   const [showReviewModal, setShowReviewModal] = useState(true);
@@ -60,6 +63,15 @@ export default function App() {
     }
   };
 
+  // Only render VectorMap in game modes that actively require or utilize the interactive map
+  const isMapRequiredMode =
+    currentMode === 'global_conquest' ||
+    currentMode === 'vanishing_10' ||
+    currentMode === 'capital_blitz' ||
+    currentMode === 'border_bridge' ||
+    currentMode === 'flag_hunter' ||
+    (currentMode === 'atlas' && atlasSubTab === 'map');
+
   return (
     <div className="flex h-screen w-screen flex-col overflow-hidden bg-[#090d16] text-slate-100">
       {/* Universal Top Navigation Bar */}
@@ -67,8 +79,8 @@ export default function App() {
 
       {/* Main Workspace Stage */}
       <main className="relative flex-1 w-full h-full overflow-hidden">
-        {/* Render Map (for all map-based modes and Atlas map view) */}
-        {(currentMode !== 'atlas' || atlasSubTab === 'map') && (
+        {/* Render Map (only for modes that actively require the map) */}
+        {isMapRequiredMode && (
           <div className="absolute inset-0 z-0">
             <VectorMap
               highlightedCountryIds={highlightedIds}
@@ -76,8 +88,6 @@ export default function App() {
               activePromptCountryId={
                 currentMode === 'capital_blitz'
                   ? capitalCurrentTarget?.id
-                  : currentMode === 'higher_lower'
-                  ? statCountryB?.id
                   : undefined
               }
               chainCountryIds={currentMode === 'border_bridge' ? bridgeChain : undefined}
@@ -116,54 +126,54 @@ export default function App() {
         {/* Atlas Learning Hub View */}
         {currentMode === 'atlas' && (
           <div className="relative z-10 flex flex-col h-full w-full pointer-events-none">
-            {/* Atlas Navigation Sub-Bar */}
-            <div className="pointer-events-auto mx-auto mt-4 z-20 flex items-center gap-1 rounded-2xl bg-slate-900/90 p-1.5 backdrop-blur-xl border border-white/10 shadow-xl">
+            {/* Atlas Navigation Sub-Bar (fixed dimensions, non-shrinking, rock solid width) */}
+            <div className="pointer-events-auto shrink-0 flex-none mx-auto my-2 sm:my-3 z-20 flex items-center justify-center gap-1 sm:gap-2 rounded-2xl bg-slate-900/95 p-1.5 backdrop-blur-2xl border border-white/10 shadow-2xl">
               <button
                 onClick={() => setAtlasSubTab('map')}
-                className={`flex items-center gap-2 px-3.5 py-1.5 text-xs font-semibold rounded-xl transition-all ${
+                className={`flex items-center justify-center gap-2 px-3.5 sm:px-5 py-2 text-xs font-bold rounded-xl whitespace-nowrap shrink-0 flex-none min-w-[125px] sm:min-w-[165px] transition-all duration-150 ${
                   atlasSubTab === 'map'
-                    ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/20'
-                    : 'text-slate-400 hover:text-white hover:bg-slate-800'
+                    ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/25'
+                    : 'text-slate-400 hover:text-white hover:bg-slate-800/80'
                 }`}
               >
-                <Map className="h-3.5 w-3.5" />
-                <span>Interactive 2D Atlas</span>
+                <Map className="h-4 w-4 shrink-0" />
+                <span>Interactive Atlas</span>
               </button>
 
               <button
                 onClick={() => setAtlasSubTab('table')}
-                className={`flex items-center gap-2 px-3.5 py-1.5 text-xs font-semibold rounded-xl transition-all ${
+                className={`flex items-center justify-center gap-2 px-3.5 sm:px-5 py-2 text-xs font-bold rounded-xl whitespace-nowrap shrink-0 flex-none min-w-[125px] sm:min-w-[165px] transition-all duration-150 ${
                   atlasSubTab === 'table'
-                    ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/20'
-                    : 'text-slate-400 hover:text-white hover:bg-slate-800'
+                    ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/25'
+                    : 'text-slate-400 hover:text-white hover:bg-slate-800/80'
                 }`}
               >
-                <Table2 className="h-3.5 w-3.5" />
+                <Table2 className="h-4 w-4 shrink-0" />
                 <span>Comparative Matrix</span>
               </button>
 
               <button
                 onClick={() => setAtlasSubTab('flashcards')}
-                className={`flex items-center gap-2 px-3.5 py-1.5 text-xs font-semibold rounded-xl transition-all ${
+                className={`flex items-center justify-center gap-2 px-3.5 sm:px-5 py-2 text-xs font-bold rounded-xl whitespace-nowrap shrink-0 flex-none min-w-[125px] sm:min-w-[165px] transition-all duration-150 ${
                   atlasSubTab === 'flashcards'
-                    ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/20'
-                    : 'text-slate-400 hover:text-white hover:bg-slate-800'
+                    ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/25'
+                    : 'text-slate-400 hover:text-white hover:bg-slate-800/80'
                 }`}
               >
-                <Layers className="h-3.5 w-3.5" />
+                <Layers className="h-4 w-4 shrink-0" />
                 <span>Smart Flashcards</span>
               </button>
             </div>
 
             {/* Sub-tab Views */}
             {atlasSubTab === 'table' && (
-              <div className="pointer-events-auto flex-1 w-full h-full bg-[#090d16]">
+              <div className="pointer-events-auto flex-1 w-full min-h-0 bg-[#080d1a] overflow-hidden">
                 <ComparisonTable />
               </div>
             )}
 
             {atlasSubTab === 'flashcards' && (
-              <div className="pointer-events-auto flex-1 w-full h-full bg-[#090d16]">
+              <div className="pointer-events-auto flex-1 w-full min-h-0 bg-[#080d1a] overflow-hidden">
                 <Flashcards />
               </div>
             )}
@@ -172,6 +182,12 @@ export default function App() {
 
         {/* Country Details Slide-Over Drawer */}
         <AtlasPanel />
+
+        {/* User Local Records & Activity Modal */}
+        <RecordsModal
+          isOpen={recordsModalOpen}
+          onClose={() => setRecordsModalOpen(false)}
+        />
       </main>
     </div>
   );
