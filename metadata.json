@@ -1,0 +1,6 @@
+{
+  "name": "GeoQuest Engine",
+  "description": "Interactive vector geography gaming and educational platform featuring global map quizzes, phantom nations, capital blitz, stat battles, and an atlas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

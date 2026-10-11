@@ -1,0 +1,6706 @@
+/**
+ * Comprehensive Sovereign Nations Dataset for GeoQuest Engine
+ * 196 recognized sovereign nations with geographical, demographic, and political data.
+ */
+
+import { CountryRecord } from './types';
+
+export const COUNTRIES: CountryRecord[] = [
+  {
+    "id": "DZA",
+    "numericId": "012",
+    "name": "Algeria",
+    "officialName": "People's Democratic Republic of Algeria",
+    "aliases": [
+      "Algeria",
+      "Dzayer"
+    ],
+    "capital": "Algiers",
+    "capitalAliases": [
+      "Alger"
+    ],
+    "continent": "Africa",
+    "subregion": "Northern Africa",
+    "flagEmoji": "🇩🇿",
+    "population": 44900000,
+    "areaSqKm": 2381741,
+    "currency": {
+      "code": "DZD",
+      "name": "Algerian Dinar",
+      "symbol": "د.ج"
+    },
+    "borders": [
+      "TUN",
+      "LBY",
+      "NER",
+      "MLI",
+      "MRT",
+      "MAR"
+    ],
+    "coordinates": [
+      1.6596,
+      28.0339
+    ],
+    "flagUrl": "https://flagcdn.com/dz.svg"
+  },
+  {
+    "id": "AGO",
+    "numericId": "024",
+    "name": "Angola",
+    "officialName": "Republic of Angola",
+    "aliases": [
+      "Angola"
+    ],
+    "capital": "Luanda",
+    "capitalAliases": [
+      "Luanda"
+    ],
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "flagEmoji": "🇦🇴",
+    "population": 34500000,
+    "areaSqKm": 1246700,
+    "currency": {
+      "code": "AOA",
+      "name": "Angolan Kwanza",
+      "symbol": "Kz"
+    },
+    "borders": [
+      "COD",
+      "COG",
+      "NAM",
+      "ZMB"
+    ],
+    "coordinates": [
+      17.8739,
+      -11.2027
+    ],
+    "flagUrl": "https://flagcdn.com/ag.svg"
+  },
+  {
+    "id": "BEN",
+    "numericId": "204",
+    "name": "Benin",
+    "officialName": "Republic of Benin",
+    "aliases": [
+      "Benin",
+      "Dahomey"
+    ],
+    "capital": "Porto-Novo",
+    "capitalAliases": [
+      "Porto Novo",
+      "Cotonou"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇧🇯",
+    "population": 13000000,
+    "areaSqKm": 114763,
+    "currency": {
+      "code": "XOF",
+      "name": "West African CFA Franc",
+      "symbol": "CFA"
+    },
+    "borders": [
+      "BFA",
+      "NER",
+      "NGA",
+      "TGO"
+    ],
+    "coordinates": [
+      2.3158,
+      9.3077
+    ],
+    "flagUrl": "https://flagcdn.com/be.svg"
+  },
+  {
+    "id": "BWA",
+    "numericId": "072",
+    "name": "Botswana",
+    "officialName": "Republic of Botswana",
+    "aliases": [
+      "Botswana"
+    ],
+    "capital": "Gaborone",
+    "capitalAliases": [
+      "Gaborone"
+    ],
+    "continent": "Africa",
+    "subregion": "Southern Africa",
+    "flagEmoji": "🇧🇼",
+    "population": 2600000,
+    "areaSqKm": 581730,
+    "currency": {
+      "code": "BWP",
+      "name": "Botswana Pula",
+      "symbol": "P"
+    },
+    "borders": [
+      "NAM",
+      "ZAF",
+      "ZMB",
+      "ZWE"
+    ],
+    "coordinates": [
+      24.6849,
+      -22.3285
+    ],
+    "flagUrl": "https://flagcdn.com/bw.svg"
+  },
+  {
+    "id": "BFA",
+    "numericId": "854",
+    "name": "Burkina Faso",
+    "officialName": "Burkina Faso",
+    "aliases": [
+      "Burkina Faso",
+      "Upper Volta"
+    ],
+    "capital": "Ouagadougou",
+    "capitalAliases": [
+      "Ouagadougou"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇧🇫",
+    "population": 22100000,
+    "areaSqKm": 274222,
+    "currency": {
+      "code": "XOF",
+      "name": "West African CFA Franc",
+      "symbol": "CFA"
+    },
+    "borders": [
+      "BEN",
+      "CIV",
+      "GHA",
+      "MLI",
+      "NER",
+      "TGO"
+    ],
+    "coordinates": [
+      -1.5616,
+      12.2383
+    ],
+    "flagUrl": "https://flagcdn.com/bf.svg"
+  },
+  {
+    "id": "BDI",
+    "numericId": "108",
+    "name": "Burundi",
+    "officialName": "Republic of Burundi",
+    "aliases": [
+      "Burundi"
+    ],
+    "capital": "Gitega",
+    "capitalAliases": [
+      "Bujumbura",
+      "Gitega"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇧🇮",
+    "population": 12600000,
+    "areaSqKm": 27834,
+    "currency": {
+      "code": "BIF",
+      "name": "Burundian Franc",
+      "symbol": "FBu"
+    },
+    "borders": [
+      "COD",
+      "RWA",
+      "TZA"
+    ],
+    "coordinates": [
+      29.9189,
+      -3.3731
+    ],
+    "flagUrl": "https://flagcdn.com/bd.svg"
+  },
+  {
+    "id": "CPV",
+    "numericId": "132",
+    "name": "Cabo Verde",
+    "officialName": "Republic of Cabo Verde",
+    "aliases": [
+      "Cabo Verde",
+      "Cape Verde"
+    ],
+    "capital": "Praia",
+    "capitalAliases": [
+      "Praia"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇨🇻",
+    "population": 590000,
+    "areaSqKm": 4033,
+    "currency": {
+      "code": "CVE",
+      "name": "Cape Verdean Escudo",
+      "symbol": "Esc"
+    },
+    "borders": [],
+    "coordinates": [
+      -23.5133,
+      15.1201
+    ],
+    "flagUrl": "https://flagcdn.com/cp.svg"
+  },
+  {
+    "id": "CMR",
+    "numericId": "120",
+    "name": "Cameroon",
+    "officialName": "Republic of Cameroon",
+    "aliases": [
+      "Cameroon",
+      "Cameroun"
+    ],
+    "capital": "Yaounde",
+    "capitalAliases": [
+      "Yaounde"
+    ],
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "flagEmoji": "🇨🇲",
+    "population": 27900000,
+    "areaSqKm": 475650,
+    "currency": {
+      "code": "XAF",
+      "name": "Central African CFA Franc",
+      "symbol": "FCFA"
+    },
+    "borders": [
+      "CAF",
+      "TCD",
+      "COG",
+      "GNQ",
+      "GAB",
+      "NGA"
+    ],
+    "coordinates": [
+      12.3547,
+      7.3697
+    ],
+    "flagUrl": "https://flagcdn.com/cm.svg"
+  },
+  {
+    "id": "CAF",
+    "numericId": "140",
+    "name": "Central African Republic",
+    "officialName": "Central African Republic",
+    "aliases": [
+      "Central African Republic",
+      "CAR",
+      "Centrafrique"
+    ],
+    "capital": "Bangui",
+    "capitalAliases": [
+      "Bangui"
+    ],
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "flagEmoji": "🇨🇫",
+    "population": 5500000,
+    "areaSqKm": 622984,
+    "currency": {
+      "code": "XAF",
+      "name": "Central African CFA Franc",
+      "symbol": "FCFA"
+    },
+    "borders": [
+      "CMR",
+      "TCD",
+      "COD",
+      "COG",
+      "SSD",
+      "SDN"
+    ],
+    "coordinates": [
+      20.9394,
+      6.6111
+    ],
+    "flagUrl": "https://flagcdn.com/ca.svg"
+  },
+  {
+    "id": "TCD",
+    "numericId": "148",
+    "name": "Chad",
+    "officialName": "Republic of Chad",
+    "aliases": [
+      "Chad",
+      "Tchad"
+    ],
+    "capital": "N'Djamena",
+    "capitalAliases": [
+      "NDjamena",
+      "Fort-Lamy"
+    ],
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "flagEmoji": "🇹🇩",
+    "population": 17700000,
+    "areaSqKm": 1284000,
+    "currency": {
+      "code": "XAF",
+      "name": "Central African CFA Franc",
+      "symbol": "FCFA"
+    },
+    "borders": [
+      "CMR",
+      "CAF",
+      "LBY",
+      "NER",
+      "NGA",
+      "SDN"
+    ],
+    "coordinates": [
+      18.7322,
+      15.4542
+    ],
+    "flagUrl": "https://flagcdn.com/tc.svg"
+  },
+  {
+    "id": "COM",
+    "numericId": "174",
+    "name": "Comoros",
+    "officialName": "Union of the Comoros",
+    "aliases": [
+      "Comoros"
+    ],
+    "capital": "Moroni",
+    "capitalAliases": [
+      "Moroni"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇰🇲",
+    "population": 836774,
+    "areaSqKm": 1862,
+    "currency": {
+      "code": "KMF",
+      "name": "Comorian Franc",
+      "symbol": "CF"
+    },
+    "borders": [],
+    "coordinates": [
+      43.3333,
+      -11.6455
+    ],
+    "flagUrl": "https://flagcdn.com/co.svg"
+  },
+  {
+    "id": "COD",
+    "numericId": "180",
+    "name": "Democratic Republic of the Congo",
+    "officialName": "Democratic Republic of the Congo",
+    "aliases": [
+      "Democratic Republic of the Congo",
+      "DRC",
+      "DR Congo",
+      "Congo-Kinshasa",
+      "Zaire"
+    ],
+    "capital": "Kinshasa",
+    "capitalAliases": [
+      "Kinshasa"
+    ],
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "flagEmoji": "🇨🇩",
+    "population": 99000000,
+    "areaSqKm": 2344858,
+    "currency": {
+      "code": "CDF",
+      "name": "Congolese Franc",
+      "symbol": "FC"
+    },
+    "borders": [
+      "AGO",
+      "BDI",
+      "CAF",
+      "COG",
+      "RWA",
+      "SSD",
+      "TZA",
+      "UGA",
+      "ZMB"
+    ],
+    "coordinates": [
+      21.7587,
+      -4.0383
+    ],
+    "flagUrl": "https://flagcdn.com/co.svg"
+  },
+  {
+    "id": "COG",
+    "numericId": "178",
+    "name": "Republic of the Congo",
+    "officialName": "Republic of the Congo",
+    "aliases": [
+      "Republic of the Congo",
+      "Congo",
+      "Congo-Brazzaville"
+    ],
+    "capital": "Brazzaville",
+    "capitalAliases": [
+      "Brazzaville"
+    ],
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "flagEmoji": "🇨🇬",
+    "population": 5970000,
+    "areaSqKm": 342000,
+    "currency": {
+      "code": "XAF",
+      "name": "Central African CFA Franc",
+      "symbol": "FCFA"
+    },
+    "borders": [
+      "AGO",
+      "CMR",
+      "CAF",
+      "COD",
+      "GAB"
+    ],
+    "coordinates": [
+      15.8277,
+      -0.228
+    ],
+    "flagUrl": "https://flagcdn.com/co.svg"
+  },
+  {
+    "id": "CIV",
+    "numericId": "384",
+    "name": "Ivory Coast",
+    "officialName": "Republic of Côte d'Ivoire",
+    "aliases": [
+      "Ivory Coast",
+      "Cote d'Ivoire",
+      "Cote dIvoire"
+    ],
+    "capital": "Yamoussoukro",
+    "capitalAliases": [
+      "Yamoussoukro",
+      "Abidjan"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇨🇮",
+    "population": 28160000,
+    "areaSqKm": 322463,
+    "currency": {
+      "code": "XOF",
+      "name": "West African CFA Franc",
+      "symbol": "CFA"
+    },
+    "borders": [
+      "BFA",
+      "GHA",
+      "GIN",
+      "LBR",
+      "MLI"
+    ],
+    "coordinates": [
+      -5.5471,
+      7.54
+    ],
+    "flagUrl": "https://flagcdn.com/ci.svg"
+  },
+  {
+    "id": "DJI",
+    "numericId": "262",
+    "name": "Djibouti",
+    "officialName": "Republic of Djibouti",
+    "aliases": [
+      "Djibouti"
+    ],
+    "capital": "Djibouti",
+    "capitalAliases": [
+      "Djibouti City"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇩🇯",
+    "population": 1120000,
+    "areaSqKm": 23200,
+    "currency": {
+      "code": "DJF",
+      "name": "Djiboutian Franc",
+      "symbol": "Fdj"
+    },
+    "borders": [
+      "ERI",
+      "ETH",
+      "SOM"
+    ],
+    "coordinates": [
+      42.5903,
+      11.8251
+    ],
+    "flagUrl": "https://flagcdn.com/dj.svg"
+  },
+  {
+    "id": "EGY",
+    "numericId": "818",
+    "name": "Egypt",
+    "officialName": "Arab Republic of Egypt",
+    "aliases": [
+      "Egypt",
+      "Misr"
+    ],
+    "capital": "Cairo",
+    "capitalAliases": [
+      "Al-Qahirah"
+    ],
+    "continent": "Africa",
+    "subregion": "Northern Africa",
+    "flagEmoji": "🇪🇬",
+    "population": 104000000,
+    "areaSqKm": 1002450,
+    "currency": {
+      "code": "EGP",
+      "name": "Egyptian Pound",
+      "symbol": "E£"
+    },
+    "borders": [
+      "ISR",
+      "LBY",
+      "SDN"
+    ],
+    "coordinates": [
+      30.8025,
+      26.8206
+    ],
+    "flagUrl": "https://flagcdn.com/eg.svg"
+  },
+  {
+    "id": "GNQ",
+    "numericId": "226",
+    "name": "Equatorial Guinea",
+    "officialName": "Republic of Equatorial Guinea",
+    "aliases": [
+      "Equatorial Guinea"
+    ],
+    "capital": "Malabo",
+    "capitalAliases": [
+      "Malabo",
+      "Ciudad de la Paz"
+    ],
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "flagEmoji": "🇬🇶",
+    "population": 1674908,
+    "areaSqKm": 28051,
+    "currency": {
+      "code": "XAF",
+      "name": "Central African CFA Franc",
+      "symbol": "FCFA"
+    },
+    "borders": [
+      "CMR",
+      "GAB"
+    ],
+    "coordinates": [
+      10.2679,
+      1.6508
+    ],
+    "flagUrl": "https://flagcdn.com/gn.svg"
+  },
+  {
+    "id": "ERI",
+    "numericId": "232",
+    "name": "Eritrea",
+    "officialName": "State of Eritrea",
+    "aliases": [
+      "Eritrea"
+    ],
+    "capital": "Asmara",
+    "capitalAliases": [
+      "Asmara"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇪🇷",
+    "population": 3684032,
+    "areaSqKm": 117600,
+    "currency": {
+      "code": "ERN",
+      "name": "Eritrean Nakfa",
+      "symbol": "Nfk"
+    },
+    "borders": [
+      "DJI",
+      "ETH",
+      "SDN"
+    ],
+    "coordinates": [
+      39.7823,
+      15.1794
+    ],
+    "flagUrl": "https://flagcdn.com/er.svg"
+  },
+  {
+    "id": "SWZ",
+    "numericId": "748",
+    "name": "Eswatini",
+    "officialName": "Kingdom of Eswatini",
+    "aliases": [
+      "Eswatini",
+      "Swaziland"
+    ],
+    "capital": "Mbabane",
+    "capitalAliases": [
+      "Mbabane",
+      "Lobamba"
+    ],
+    "continent": "Africa",
+    "subregion": "Southern Africa",
+    "flagEmoji": "🇸🇿",
+    "population": 1192271,
+    "areaSqKm": 17364,
+    "currency": {
+      "code": "SZL",
+      "name": "Swazi Lilangeni",
+      "symbol": "L"
+    },
+    "borders": [
+      "MOZ",
+      "ZAF"
+    ],
+    "coordinates": [
+      31.4659,
+      -26.5225
+    ],
+    "flagUrl": "https://flagcdn.com/sw.svg"
+  },
+  {
+    "id": "ETH",
+    "numericId": "231",
+    "name": "Ethiopia",
+    "officialName": "Federal Democratic Republic of Ethiopia",
+    "aliases": [
+      "Ethiopia",
+      "Abyssinia"
+    ],
+    "capital": "Addis Ababa",
+    "capitalAliases": [
+      "Addis Abeba"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇪🇹",
+    "population": 123400000,
+    "areaSqKm": 1104300,
+    "currency": {
+      "code": "ETB",
+      "name": "Ethiopian Birr",
+      "symbol": "Br"
+    },
+    "borders": [
+      "DJI",
+      "ERI",
+      "KEN",
+      "SOM",
+      "SSD",
+      "SDN"
+    ],
+    "coordinates": [
+      40.4897,
+      9.145
+    ],
+    "flagUrl": "https://flagcdn.com/et.svg"
+  },
+  {
+    "id": "GAB",
+    "numericId": "266",
+    "name": "Gabon",
+    "officialName": "Gabonese Republic",
+    "aliases": [
+      "Gabon"
+    ],
+    "capital": "Libreville",
+    "capitalAliases": [
+      "Libreville"
+    ],
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "flagEmoji": "🇬🇦",
+    "population": 2388992,
+    "areaSqKm": 267668,
+    "currency": {
+      "code": "XAF",
+      "name": "Central African CFA Franc",
+      "symbol": "FCFA"
+    },
+    "borders": [
+      "CMR",
+      "COG",
+      "GNQ"
+    ],
+    "coordinates": [
+      11.6094,
+      -0.8037
+    ],
+    "flagUrl": "https://flagcdn.com/ga.svg"
+  },
+  {
+    "id": "GMB",
+    "numericId": "270",
+    "name": "Gambia",
+    "officialName": "Republic of The Gambia",
+    "aliases": [
+      "Gambia",
+      "The Gambia"
+    ],
+    "capital": "Banjul",
+    "capitalAliases": [
+      "Banjul"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇬🇲",
+    "population": 2705992,
+    "areaSqKm": 11295,
+    "currency": {
+      "code": "GMD",
+      "name": "Gambian Dalasi",
+      "symbol": "D"
+    },
+    "borders": [
+      "SEN"
+    ],
+    "coordinates": [
+      -15.3101,
+      13.4432
+    ],
+    "flagUrl": "https://flagcdn.com/gm.svg"
+  },
+  {
+    "id": "GHA",
+    "numericId": "288",
+    "name": "Ghana",
+    "officialName": "Republic of Ghana",
+    "aliases": [
+      "Ghana",
+      "Gold Coast"
+    ],
+    "capital": "Accra",
+    "capitalAliases": [
+      "Accra"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇬🇭",
+    "population": 33475870,
+    "areaSqKm": 238533,
+    "currency": {
+      "code": "GHS",
+      "name": "Ghanaian Cedi",
+      "symbol": "GH₵"
+    },
+    "borders": [
+      "BFA",
+      "CIV",
+      "TGO"
+    ],
+    "coordinates": [
+      -1.0232,
+      7.9465
+    ],
+    "flagUrl": "https://flagcdn.com/gh.svg"
+  },
+  {
+    "id": "GIN",
+    "numericId": "324",
+    "name": "Guinea",
+    "officialName": "Republic of Guinea",
+    "aliases": [
+      "Guinea",
+      "French Guinea"
+    ],
+    "capital": "Conakry",
+    "capitalAliases": [
+      "Conakry"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇬🇳",
+    "population": 13859341,
+    "areaSqKm": 245857,
+    "currency": {
+      "code": "GNF",
+      "name": "Guinean Franc",
+      "symbol": "FG"
+    },
+    "borders": [
+      "CIV",
+      "GNB",
+      "LBR",
+      "MLI",
+      "SEN",
+      "SLE"
+    ],
+    "coordinates": [
+      -9.6966,
+      9.9456
+    ],
+    "flagUrl": "https://flagcdn.com/gi.svg"
+  },
+  {
+    "id": "GNB",
+    "numericId": "624",
+    "name": "Guinea-Bissau",
+    "officialName": "Republic of Guinea-Bissau",
+    "aliases": [
+      "Guinea-Bissau",
+      "Guinea Bissau",
+      "Portuguese Guinea"
+    ],
+    "capital": "Bissau",
+    "capitalAliases": [
+      "Bissau"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇬🇼",
+    "population": 2060721,
+    "areaSqKm": 36125,
+    "currency": {
+      "code": "XOF",
+      "name": "West African CFA Franc",
+      "symbol": "CFA"
+    },
+    "borders": [
+      "GIN",
+      "SEN"
+    ],
+    "coordinates": [
+      -15.1804,
+      11.8037
+    ],
+    "flagUrl": "https://flagcdn.com/gn.svg"
+  },
+  {
+    "id": "KEN",
+    "numericId": "404",
+    "name": "Kenya",
+    "officialName": "Republic of Kenya",
+    "aliases": [
+      "Kenya"
+    ],
+    "capital": "Nairobi",
+    "capitalAliases": [
+      "Nairobi"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇰🇪",
+    "population": 54030000,
+    "areaSqKm": 580367,
+    "currency": {
+      "code": "KES",
+      "name": "Kenyan Shilling",
+      "symbol": "KSh"
+    },
+    "borders": [
+      "ETH",
+      "SOM",
+      "SSD",
+      "TZA",
+      "UGA"
+    ],
+    "coordinates": [
+      37.9062,
+      -0.0236
+    ],
+    "flagUrl": "https://flagcdn.com/ke.svg"
+  },
+  {
+    "id": "LSO",
+    "numericId": "426",
+    "name": "Lesotho",
+    "officialName": "Kingdom of Lesotho",
+    "aliases": [
+      "Lesotho",
+      "Basutoland"
+    ],
+    "capital": "Maseru",
+    "capitalAliases": [
+      "Maseru"
+    ],
+    "continent": "Africa",
+    "subregion": "Southern Africa",
+    "flagEmoji": "🇱🇸",
+    "population": 2281454,
+    "areaSqKm": 30355,
+    "currency": {
+      "code": "LSL",
+      "name": "Lesotho Loti",
+      "symbol": "L"
+    },
+    "borders": [
+      "ZAF"
+    ],
+    "coordinates": [
+      28.2336,
+      -29.6099
+    ],
+    "flagUrl": "https://flagcdn.com/ls.svg"
+  },
+  {
+    "id": "LBR",
+    "numericId": "430",
+    "name": "Liberia",
+    "officialName": "Republic of Liberia",
+    "aliases": [
+      "Liberia"
+    ],
+    "capital": "Monrovia",
+    "capitalAliases": [
+      "Monrovia"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇱🇷",
+    "population": 5302681,
+    "areaSqKm": 111369,
+    "currency": {
+      "code": "LRD",
+      "name": "Liberian Dollar",
+      "symbol": "L$"
+    },
+    "borders": [
+      "CIV",
+      "GIN",
+      "SLE"
+    ],
+    "coordinates": [
+      -9.4295,
+      6.4281
+    ],
+    "flagUrl": "https://flagcdn.com/lb.svg"
+  },
+  {
+    "id": "LBY",
+    "numericId": "434",
+    "name": "Libya",
+    "officialName": "State of Libya",
+    "aliases": [
+      "Libya"
+    ],
+    "capital": "Tripoli",
+    "capitalAliases": [
+      "Tripoli"
+    ],
+    "continent": "Africa",
+    "subregion": "Northern Africa",
+    "flagEmoji": "🇱🇾",
+    "population": 6812341,
+    "areaSqKm": 1759540,
+    "currency": {
+      "code": "LYD",
+      "name": "Libyan Dinar",
+      "symbol": "LD"
+    },
+    "borders": [
+      "DZA",
+      "TCD",
+      "EGY",
+      "NER",
+      "SDN",
+      "TUN"
+    ],
+    "coordinates": [
+      17.2283,
+      26.3351
+    ],
+    "flagUrl": "https://flagcdn.com/lb.svg"
+  },
+  {
+    "id": "MDG",
+    "numericId": "450",
+    "name": "Madagascar",
+    "officialName": "Republic of Madagascar",
+    "aliases": [
+      "Madagascar"
+    ],
+    "capital": "Antananarivo",
+    "capitalAliases": [
+      "Antananarivo",
+      "Tana"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇲🇬",
+    "population": 29611714,
+    "areaSqKm": 587041,
+    "currency": {
+      "code": "MGA",
+      "name": "Malagasy Ariary",
+      "symbol": "Ar"
+    },
+    "borders": [],
+    "coordinates": [
+      46.8691,
+      -18.7669
+    ],
+    "flagUrl": "https://flagcdn.com/md.svg"
+  },
+  {
+    "id": "MWI",
+    "numericId": "454",
+    "name": "Malawi",
+    "officialName": "Republic of Malawi",
+    "aliases": [
+      "Malawi",
+      "Nyasaland"
+    ],
+    "capital": "Lilongwe",
+    "capitalAliases": [
+      "Lilongwe"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇲🇼",
+    "population": 20405317,
+    "areaSqKm": 118484,
+    "currency": {
+      "code": "MWK",
+      "name": "Malawian Kwacha",
+      "symbol": "MK"
+    },
+    "borders": [
+      "MOZ",
+      "TZA",
+      "ZMB"
+    ],
+    "coordinates": [
+      34.3015,
+      -13.2543
+    ],
+    "flagUrl": "https://flagcdn.com/mw.svg"
+  },
+  {
+    "id": "MLI",
+    "numericId": "466",
+    "name": "Mali",
+    "officialName": "Republic of Mali",
+    "aliases": [
+      "Mali"
+    ],
+    "capital": "Bamako",
+    "capitalAliases": [
+      "Bamako"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇲🇱",
+    "population": 22593590,
+    "areaSqKm": 1240192,
+    "currency": {
+      "code": "XOF",
+      "name": "West African CFA Franc",
+      "symbol": "CFA"
+    },
+    "borders": [
+      "DZA",
+      "BFA",
+      "CIV",
+      "GIN",
+      "MRT",
+      "NER",
+      "SEN"
+    ],
+    "coordinates": [
+      -3.9962,
+      17.5707
+    ],
+    "flagUrl": "https://flagcdn.com/ml.svg"
+  },
+  {
+    "id": "MRT",
+    "numericId": "478",
+    "name": "Mauritania",
+    "officialName": "Islamic Republic of Mauritania",
+    "aliases": [
+      "Mauritania"
+    ],
+    "capital": "Nouakchott",
+    "capitalAliases": [
+      "Nouakchott"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇲🇷",
+    "population": 4736139,
+    "areaSqKm": 1030700,
+    "currency": {
+      "code": "MRU",
+      "name": "Mauritanian Ouguiya",
+      "symbol": "UM"
+    },
+    "borders": [
+      "DZA",
+      "MLI",
+      "SEN"
+    ],
+    "coordinates": [
+      -10.9408,
+      21.0079
+    ],
+    "flagUrl": "https://flagcdn.com/mr.svg"
+  },
+  {
+    "id": "MUS",
+    "numericId": "480",
+    "name": "Mauritius",
+    "officialName": "Republic of Mauritius",
+    "aliases": [
+      "Mauritius"
+    ],
+    "capital": "Port Louis",
+    "capitalAliases": [
+      "Port Louis"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇲🇺",
+    "population": 1298915,
+    "areaSqKm": 2040,
+    "currency": {
+      "code": "MUR",
+      "name": "Mauritian Rupee",
+      "symbol": "₨"
+    },
+    "borders": [],
+    "coordinates": [
+      57.5522,
+      -20.3484
+    ],
+    "flagUrl": "https://flagcdn.com/mu.svg"
+  },
+  {
+    "id": "MAR",
+    "numericId": "504",
+    "name": "Morocco",
+    "officialName": "Kingdom of Morocco",
+    "aliases": [
+      "Morocco",
+      "Maroc"
+    ],
+    "capital": "Rabat",
+    "capitalAliases": [
+      "Rabat"
+    ],
+    "continent": "Africa",
+    "subregion": "Northern Africa",
+    "flagEmoji": "🇲🇦",
+    "population": 37457971,
+    "areaSqKm": 446550,
+    "currency": {
+      "code": "MAD",
+      "name": "Moroccan Dirham",
+      "symbol": "DH"
+    },
+    "borders": [
+      "DZA",
+      "ESP"
+    ],
+    "coordinates": [
+      -7.0926,
+      31.7917
+    ],
+    "flagUrl": "https://flagcdn.com/ma.svg"
+  },
+  {
+    "id": "MOZ",
+    "numericId": "508",
+    "name": "Mozambique",
+    "officialName": "Republic of Mozambique",
+    "aliases": [
+      "Mozambique"
+    ],
+    "capital": "Maputo",
+    "capitalAliases": [
+      "Maputo",
+      "Lourenco Marques"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇲🇿",
+    "population": 32975947,
+    "areaSqKm": 801590,
+    "currency": {
+      "code": "MZN",
+      "name": "Mozambican Metical",
+      "symbol": "MT"
+    },
+    "borders": [
+      "MWI",
+      "ZAF",
+      "SWZ",
+      "TZA",
+      "ZMB",
+      "ZWE"
+    ],
+    "coordinates": [
+      35.5296,
+      -18.6657
+    ],
+    "flagUrl": "https://flagcdn.com/mo.svg"
+  },
+  {
+    "id": "NAM",
+    "numericId": "516",
+    "name": "Namibia",
+    "officialName": "Republic of Namibia",
+    "aliases": [
+      "Namibia",
+      "South West Africa"
+    ],
+    "capital": "Windhoek",
+    "capitalAliases": [
+      "Windhoek"
+    ],
+    "continent": "Africa",
+    "subregion": "Southern Africa",
+    "flagEmoji": "🇳🇦",
+    "population": 2567012,
+    "areaSqKm": 825615,
+    "currency": {
+      "code": "NAD",
+      "name": "Namibian Dollar",
+      "symbol": "N$"
+    },
+    "borders": [
+      "AGO",
+      "BWA",
+      "ZAF",
+      "ZMB"
+    ],
+    "coordinates": [
+      18.4904,
+      -22.9576
+    ],
+    "flagUrl": "https://flagcdn.com/na.svg"
+  },
+  {
+    "id": "NER",
+    "numericId": "562",
+    "name": "Niger",
+    "officialName": "Republic of the Niger",
+    "aliases": [
+      "Niger"
+    ],
+    "capital": "Niamey",
+    "capitalAliases": [
+      "Niamey"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇳🇪",
+    "population": 26207977,
+    "areaSqKm": 1267000,
+    "currency": {
+      "code": "XOF",
+      "name": "West African CFA Franc",
+      "symbol": "CFA"
+    },
+    "borders": [
+      "DZA",
+      "BEN",
+      "BFA",
+      "TCD",
+      "LBY",
+      "MLI",
+      "NGA"
+    ],
+    "coordinates": [
+      8.0817,
+      17.6078
+    ],
+    "flagUrl": "https://flagcdn.com/ne.svg"
+  },
+  {
+    "id": "NGA",
+    "numericId": "566",
+    "name": "Nigeria",
+    "officialName": "Federal Republic of Nigeria",
+    "aliases": [
+      "Nigeria"
+    ],
+    "capital": "Abuja",
+    "capitalAliases": [
+      "Abuja",
+      "Lagos"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇳🇬",
+    "population": 218500000,
+    "areaSqKm": 923768,
+    "currency": {
+      "code": "NGN",
+      "name": "Nigerian Naira",
+      "symbol": "₦"
+    },
+    "borders": [
+      "BEN",
+      "CMR",
+      "TCD",
+      "NER"
+    ],
+    "coordinates": [
+      8.6753,
+      9.082
+    ],
+    "flagUrl": "https://flagcdn.com/ng.svg"
+  },
+  {
+    "id": "RWA",
+    "numericId": "646",
+    "name": "Rwanda",
+    "officialName": "Republic of Rwanda",
+    "aliases": [
+      "Rwanda"
+    ],
+    "capital": "Kigali",
+    "capitalAliases": [
+      "Kigali"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇷🇼",
+    "population": 13776698,
+    "areaSqKm": 26338,
+    "currency": {
+      "code": "RWF",
+      "name": "Rwandan Franc",
+      "symbol": "FRw"
+    },
+    "borders": [
+      "BDI",
+      "COD",
+      "TZA",
+      "UGA"
+    ],
+    "coordinates": [
+      29.8739,
+      -1.9403
+    ],
+    "flagUrl": "https://flagcdn.com/rw.svg"
+  },
+  {
+    "id": "STP",
+    "numericId": "678",
+    "name": "Sao Tome and Principe",
+    "officialName": "Democratic Republic of Sao Tome and Principe",
+    "aliases": [
+      "Sao Tome and Principe",
+      "Sao Tome"
+    ],
+    "capital": "Sao Tome",
+    "capitalAliases": [
+      "Sao Tome"
+    ],
+    "continent": "Africa",
+    "subregion": "Middle Africa",
+    "flagEmoji": "🇸🇹",
+    "population": 227380,
+    "areaSqKm": 964,
+    "currency": {
+      "code": "STN",
+      "name": "Sao Tome and Principe Dobra",
+      "symbol": "Db"
+    },
+    "borders": [],
+    "coordinates": [
+      6.6131,
+      0.1864
+    ],
+    "flagUrl": "https://flagcdn.com/st.svg"
+  },
+  {
+    "id": "SEN",
+    "numericId": "686",
+    "name": "Senegal",
+    "officialName": "Republic of Senegal",
+    "aliases": [
+      "Senegal"
+    ],
+    "capital": "Dakar",
+    "capitalAliases": [
+      "Dakar"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇸🇳",
+    "population": 17316449,
+    "areaSqKm": 196722,
+    "currency": {
+      "code": "XOF",
+      "name": "West African CFA Franc",
+      "symbol": "CFA"
+    },
+    "borders": [
+      "GMB",
+      "GIN",
+      "GNB",
+      "MLI",
+      "MRT"
+    ],
+    "coordinates": [
+      -14.4524,
+      14.4974
+    ],
+    "flagUrl": "https://flagcdn.com/se.svg"
+  },
+  {
+    "id": "SYC",
+    "numericId": "690",
+    "name": "Seychelles",
+    "officialName": "Republic of Seychelles",
+    "aliases": [
+      "Seychelles"
+    ],
+    "capital": "Victoria",
+    "capitalAliases": [
+      "Victoria"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇸🇨",
+    "population": 107122,
+    "areaSqKm": 452,
+    "currency": {
+      "code": "SCR",
+      "name": "Seychellois Rupee",
+      "symbol": "SR"
+    },
+    "borders": [],
+    "coordinates": [
+      55.492,
+      -4.6796
+    ],
+    "flagUrl": "https://flagcdn.com/sy.svg"
+  },
+  {
+    "id": "SLE",
+    "numericId": "694",
+    "name": "Sierra Leone",
+    "officialName": "Republic of Sierra Leone",
+    "aliases": [
+      "Sierra Leone",
+      "SL"
+    ],
+    "capital": "Freetown",
+    "capitalAliases": [
+      "Freetown"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇸🇱",
+    "population": 8605718,
+    "areaSqKm": 71740,
+    "currency": {
+      "code": "SLE",
+      "name": "Sierra Leonean Leone",
+      "symbol": "Le"
+    },
+    "borders": [
+      "GIN",
+      "LBR"
+    ],
+    "coordinates": [
+      -11.7799,
+      8.4606
+    ],
+    "flagUrl": "https://flagcdn.com/sl.svg"
+  },
+  {
+    "id": "SOM",
+    "numericId": "706",
+    "name": "Somalia",
+    "officialName": "Federal Republic of Somalia",
+    "aliases": [
+      "Somalia"
+    ],
+    "capital": "Mogadishu",
+    "capitalAliases": [
+      "Mogadishu"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇸🇴",
+    "population": 17597511,
+    "areaSqKm": 637657,
+    "currency": {
+      "code": "SOS",
+      "name": "Somali Shilling",
+      "symbol": "Sh"
+    },
+    "borders": [
+      "DJI",
+      "ETH",
+      "KEN"
+    ],
+    "coordinates": [
+      46.1996,
+      5.1521
+    ],
+    "flagUrl": "https://flagcdn.com/so.svg"
+  },
+  {
+    "id": "ZAF",
+    "numericId": "710",
+    "name": "South Africa",
+    "officialName": "Republic of South Africa",
+    "aliases": [
+      "South Africa",
+      "RSA",
+      "Azania",
+      "ZA"
+    ],
+    "capital": "Pretoria",
+    "capitalAliases": [
+      "Pretoria",
+      "Cape Town",
+      "Bloemfontein"
+    ],
+    "continent": "Africa",
+    "subregion": "Southern Africa",
+    "flagEmoji": "🇿🇦",
+    "population": 60600000,
+    "areaSqKm": 1221037,
+    "currency": {
+      "code": "ZAR",
+      "name": "South African Rand",
+      "symbol": "R"
+    },
+    "borders": [
+      "BWA",
+      "LSO",
+      "MOZ",
+      "NAM",
+      "SWZ",
+      "ZWE"
+    ],
+    "coordinates": [
+      22.9375,
+      -30.5595
+    ],
+    "flagUrl": "https://flagcdn.com/za.svg"
+  },
+  {
+    "id": "SSD",
+    "numericId": "728",
+    "name": "South Sudan",
+    "officialName": "Republic of South Sudan",
+    "aliases": [
+      "South Sudan"
+    ],
+    "capital": "Juba",
+    "capitalAliases": [
+      "Juba"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇸🇸",
+    "population": 10913164,
+    "areaSqKm": 619745,
+    "currency": {
+      "code": "SSP",
+      "name": "South Sudanese Pound",
+      "symbol": "£"
+    },
+    "borders": [
+      "CAF",
+      "COD",
+      "ETH",
+      "KEN",
+      "SDN",
+      "UGA"
+    ],
+    "coordinates": [
+      31.307,
+      6.877
+    ],
+    "flagUrl": "https://flagcdn.com/ss.svg"
+  },
+  {
+    "id": "SDN",
+    "numericId": "729",
+    "name": "Sudan",
+    "officialName": "Republic of the Sudan",
+    "aliases": [
+      "Sudan",
+      "North Sudan"
+    ],
+    "capital": "Khartoum",
+    "capitalAliases": [
+      "Khartoum"
+    ],
+    "continent": "Africa",
+    "subregion": "Northern Africa",
+    "flagEmoji": "🇸🇩",
+    "population": 46874204,
+    "areaSqKm": 1861484,
+    "currency": {
+      "code": "SDG",
+      "name": "Sudanese Pound",
+      "symbol": "SDG"
+    },
+    "borders": [
+      "CAF",
+      "TCD",
+      "EGY",
+      "ERI",
+      "ETH",
+      "LBY",
+      "SSD"
+    ],
+    "coordinates": [
+      30.2176,
+      12.8628
+    ],
+    "flagUrl": "https://flagcdn.com/sd.svg"
+  },
+  {
+    "id": "TZA",
+    "numericId": "834",
+    "name": "Tanzania",
+    "officialName": "United Republic of Tanzania",
+    "aliases": [
+      "Tanzania",
+      "Tanganyika"
+    ],
+    "capital": "Dodoma",
+    "capitalAliases": [
+      "Dodoma",
+      "Dar es Salaam"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇹🇿",
+    "population": 65497748,
+    "areaSqKm": 945087,
+    "currency": {
+      "code": "TZS",
+      "name": "Tanzanian Shilling",
+      "symbol": "TSh"
+    },
+    "borders": [
+      "BDI",
+      "COD",
+      "KEN",
+      "MWI",
+      "MOZ",
+      "RWA",
+      "UGA",
+      "ZMB"
+    ],
+    "coordinates": [
+      34.8888,
+      -6.369
+    ],
+    "flagUrl": "https://flagcdn.com/tz.svg"
+  },
+  {
+    "id": "TGO",
+    "numericId": "768",
+    "name": "Togo",
+    "officialName": "Togolese Republic",
+    "aliases": [
+      "Togo"
+    ],
+    "capital": "Lome",
+    "capitalAliases": [
+      "Lome"
+    ],
+    "continent": "Africa",
+    "subregion": "Western Africa",
+    "flagEmoji": "🇹🇬",
+    "population": 8848699,
+    "areaSqKm": 56785,
+    "currency": {
+      "code": "XOF",
+      "name": "West African CFA Franc",
+      "symbol": "CFA"
+    },
+    "borders": [
+      "BEN",
+      "BFA",
+      "GHA"
+    ],
+    "coordinates": [
+      0.8248,
+      8.6195
+    ],
+    "flagUrl": "https://flagcdn.com/tg.svg"
+  },
+  {
+    "id": "TUN",
+    "numericId": "788",
+    "name": "Tunisia",
+    "officialName": "Republic of Tunisia",
+    "aliases": [
+      "Tunisia"
+    ],
+    "capital": "Tunis",
+    "capitalAliases": [
+      "Tunis"
+    ],
+    "continent": "Africa",
+    "subregion": "Northern Africa",
+    "flagEmoji": "🇹🇳",
+    "population": 12356117,
+    "areaSqKm": 163610,
+    "currency": {
+      "code": "TND",
+      "name": "Tunisian Dinar",
+      "symbol": "DT"
+    },
+    "borders": [
+      "DZA",
+      "LBY"
+    ],
+    "coordinates": [
+      9.5375,
+      33.8869
+    ],
+    "flagUrl": "https://flagcdn.com/tu.svg"
+  },
+  {
+    "id": "UGA",
+    "numericId": "800",
+    "name": "Uganda",
+    "officialName": "Republic of Uganda",
+    "aliases": [
+      "Uganda"
+    ],
+    "capital": "Kampala",
+    "capitalAliases": [
+      "Kampala"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇺🇬",
+    "population": 47249585,
+    "areaSqKm": 241038,
+    "currency": {
+      "code": "UGX",
+      "name": "Ugandan Shilling",
+      "symbol": "USh"
+    },
+    "borders": [
+      "COD",
+      "KEN",
+      "RWA",
+      "SSD",
+      "TZA"
+    ],
+    "coordinates": [
+      32.2903,
+      1.3733
+    ],
+    "flagUrl": "https://flagcdn.com/ug.svg"
+  },
+  {
+    "id": "ZMB",
+    "numericId": "894",
+    "name": "Zambia",
+    "officialName": "Republic of Zambia",
+    "aliases": [
+      "Zambia",
+      "Northern Rhodesia"
+    ],
+    "capital": "Lusaka",
+    "capitalAliases": [
+      "Lusaka"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇿🇲",
+    "population": 20017675,
+    "areaSqKm": 752618,
+    "currency": {
+      "code": "ZMW",
+      "name": "Zambian Kwacha",
+      "symbol": "ZK"
+    },
+    "borders": [
+      "AGO",
+      "BWA",
+      "COD",
+      "MWI",
+      "MOZ",
+      "NAM",
+      "TZA",
+      "ZWE"
+    ],
+    "coordinates": [
+      27.8493,
+      -13.1339
+    ],
+    "flagUrl": "https://flagcdn.com/zm.svg"
+  },
+  {
+    "id": "ZWE",
+    "numericId": "716",
+    "name": "Zimbabwe",
+    "officialName": "Republic of Zimbabwe",
+    "aliases": [
+      "Zimbabwe",
+      "Southern Rhodesia"
+    ],
+    "capital": "Harare",
+    "capitalAliases": [
+      "Harare",
+      "Salisbury"
+    ],
+    "continent": "Africa",
+    "subregion": "Eastern Africa",
+    "flagEmoji": "🇿🇼",
+    "population": 16320537,
+    "areaSqKm": 390757,
+    "currency": {
+      "code": "ZWL",
+      "name": "Zimbabwean Dollar",
+      "symbol": "Z$"
+    },
+    "borders": [
+      "BWA",
+      "MOZ",
+      "ZAF",
+      "ZMB"
+    ],
+    "coordinates": [
+      29.1549,
+      -19.0154
+    ],
+    "flagUrl": "https://flagcdn.com/zw.svg"
+  },
+  {
+    "id": "ALB",
+    "numericId": "008",
+    "name": "Albania",
+    "officialName": "Republic of Albania",
+    "aliases": [
+      "Albania",
+      "Shqiperia"
+    ],
+    "capital": "Tirana",
+    "capitalAliases": [
+      "Tirane"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇦🇱",
+    "population": 2793564,
+    "areaSqKm": 28748,
+    "currency": {
+      "code": "ALL",
+      "name": "Albanian Lek",
+      "symbol": "L"
+    },
+    "borders": [
+      "MNE",
+      "KOS",
+      "MKD",
+      "GRC"
+    ],
+    "coordinates": [
+      20.1683,
+      41.1533
+    ],
+    "flagUrl": "https://flagcdn.com/al.svg"
+  },
+  {
+    "id": "AND",
+    "numericId": "020",
+    "name": "Andorra",
+    "officialName": "Principality of Andorra",
+    "aliases": [
+      "Andorra"
+    ],
+    "capital": "Andorra la Vella",
+    "capitalAliases": [
+      "Andorra la Vella"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇦🇩",
+    "population": 79824,
+    "areaSqKm": 468,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "FRA",
+      "ESP"
+    ],
+    "coordinates": [
+      1.5218,
+      42.5063
+    ],
+    "flagUrl": "https://flagcdn.com/an.svg"
+  },
+  {
+    "id": "AUT",
+    "numericId": "040",
+    "name": "Austria",
+    "officialName": "Republic of Austria",
+    "aliases": [
+      "Austria",
+      "Osterreich"
+    ],
+    "capital": "Vienna",
+    "capitalAliases": [
+      "Wien"
+    ],
+    "continent": "Europe",
+    "subregion": "Central Europe",
+    "flagEmoji": "🇦🇹",
+    "population": 8956279,
+    "areaSqKm": 83871,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "DEU",
+      "CZE",
+      "SVK",
+      "HUN",
+      "SVN",
+      "ITA",
+      "CHE",
+      "LIE"
+    ],
+    "coordinates": [
+      14.5501,
+      47.5162
+    ],
+    "flagUrl": "https://flagcdn.com/au.svg"
+  },
+  {
+    "id": "BLR",
+    "numericId": "112",
+    "name": "Belarus",
+    "officialName": "Republic of Belarus",
+    "aliases": [
+      "Belarus",
+      "Belorussia",
+      "White Russia"
+    ],
+    "capital": "Minsk",
+    "capitalAliases": [
+      "Minsk"
+    ],
+    "continent": "Europe",
+    "subregion": "Eastern Europe",
+    "flagEmoji": "🇧🇾",
+    "population": 9340314,
+    "areaSqKm": 207600,
+    "currency": {
+      "code": "BYN",
+      "name": "Belarusian Ruble",
+      "symbol": "Br"
+    },
+    "borders": [
+      "RUS",
+      "UKR",
+      "POL",
+      "LTU",
+      "LVA"
+    ],
+    "coordinates": [
+      27.9534,
+      53.7098
+    ],
+    "flagUrl": "https://flagcdn.com/bl.svg"
+  },
+  {
+    "id": "BEL",
+    "numericId": "056",
+    "name": "Belgium",
+    "officialName": "Kingdom of Belgium",
+    "aliases": [
+      "Belgium",
+      "Belgique",
+      "Belgie"
+    ],
+    "capital": "Brussels",
+    "capitalAliases": [
+      "Bruxelles",
+      "Brussel"
+    ],
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "flagEmoji": "🇧🇪",
+    "population": 11589623,
+    "areaSqKm": 30528,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "FRA",
+      "LUX",
+      "DEU",
+      "NLD"
+    ],
+    "coordinates": [
+      4.4699,
+      50.5039
+    ],
+    "flagUrl": "https://flagcdn.com/be.svg"
+  },
+  {
+    "id": "BIH",
+    "numericId": "070",
+    "name": "Bosnia and Herzegovina",
+    "officialName": "Bosnia and Herzegovina",
+    "aliases": [
+      "Bosnia and Herzegovina",
+      "Bosnia",
+      "Herzegovina",
+      "BIH"
+    ],
+    "capital": "Sarajevo",
+    "capitalAliases": [
+      "Sarajevo"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇧🇦",
+    "population": 3280819,
+    "areaSqKm": 51209,
+    "currency": {
+      "code": "BAM",
+      "name": "Convertible Mark",
+      "symbol": "KM"
+    },
+    "borders": [
+      "HRV",
+      "SRB",
+      "MNE"
+    ],
+    "coordinates": [
+      17.6791,
+      43.9159
+    ],
+    "flagUrl": "https://flagcdn.com/bi.svg"
+  },
+  {
+    "id": "BGR",
+    "numericId": "100",
+    "name": "Bulgaria",
+    "officialName": "Republic of Bulgaria",
+    "aliases": [
+      "Bulgaria"
+    ],
+    "capital": "Sofia",
+    "capitalAliases": [
+      "Sofiya"
+    ],
+    "continent": "Europe",
+    "subregion": "Eastern Europe",
+    "flagEmoji": "🇧🇬",
+    "population": 6520314,
+    "areaSqKm": 110879,
+    "currency": {
+      "code": "BGN",
+      "name": "Bulgarian Lev",
+      "symbol": "лв"
+    },
+    "borders": [
+      "ROU",
+      "SRB",
+      "MKD",
+      "GRC",
+      "TUR"
+    ],
+    "coordinates": [
+      25.4858,
+      42.7339
+    ],
+    "flagUrl": "https://flagcdn.com/bg.svg"
+  },
+  {
+    "id": "HRV",
+    "numericId": "191",
+    "name": "Croatia",
+    "officialName": "Republic of Croatia",
+    "aliases": [
+      "Croatia",
+      "Hrvatska"
+    ],
+    "capital": "Zagreb",
+    "capitalAliases": [
+      "Zagreb"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇭🇷",
+    "population": 4052105,
+    "areaSqKm": 56594,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "SVN",
+      "HUN",
+      "SRB",
+      "BIH",
+      "MNE"
+    ],
+    "coordinates": [
+      15.2,
+      45.1
+    ],
+    "flagUrl": "https://flagcdn.com/hr.svg"
+  },
+  {
+    "id": "CYP",
+    "numericId": "196",
+    "name": "Cyprus",
+    "officialName": "Republic of Cyprus",
+    "aliases": [
+      "Cyprus"
+    ],
+    "capital": "Nicosia",
+    "capitalAliases": [
+      "Lefkosia"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇨🇾",
+    "population": 1251488,
+    "areaSqKm": 9251,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [],
+    "coordinates": [
+      33.4299,
+      35.1264
+    ],
+    "flagUrl": "https://flagcdn.com/cy.svg"
+  },
+  {
+    "id": "CZE",
+    "numericId": "203",
+    "name": "Czech Republic",
+    "officialName": "Czech Republic",
+    "aliases": [
+      "Czech Republic",
+      "Czechia",
+      "Cesko"
+    ],
+    "capital": "Prague",
+    "capitalAliases": [
+      "Praha"
+    ],
+    "continent": "Europe",
+    "subregion": "Central Europe",
+    "flagEmoji": "🇨🇿",
+    "population": 10516707,
+    "areaSqKm": 78867,
+    "currency": {
+      "code": "CZK",
+      "name": "Czech Koruna",
+      "symbol": "Kč"
+    },
+    "borders": [
+      "DEU",
+      "POL",
+      "SVK",
+      "AUT"
+    ],
+    "coordinates": [
+      15.473,
+      49.8175
+    ],
+    "flagUrl": "https://flagcdn.com/cz.svg"
+  },
+  {
+    "id": "DNK",
+    "numericId": "208",
+    "name": "Denmark",
+    "officialName": "Kingdom of Denmark",
+    "aliases": [
+      "Denmark",
+      "Danmark"
+    ],
+    "capital": "Copenhagen",
+    "capitalAliases": [
+      "Kobenhavn"
+    ],
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "flagEmoji": "🇩🇰",
+    "population": 5831404,
+    "areaSqKm": 43094,
+    "currency": {
+      "code": "DKK",
+      "name": "Danish Krone",
+      "symbol": "kr"
+    },
+    "borders": [
+      "DEU"
+    ],
+    "coordinates": [
+      9.5018,
+      56.2639
+    ],
+    "flagUrl": "https://flagcdn.com/dn.svg"
+  },
+  {
+    "id": "EST",
+    "numericId": "233",
+    "name": "Estonia",
+    "officialName": "Republic of Estonia",
+    "aliases": [
+      "Estonia",
+      "Eesti"
+    ],
+    "capital": "Tallinn",
+    "capitalAliases": [
+      "Tallinn"
+    ],
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "flagEmoji": "🇪🇪",
+    "population": 1331796,
+    "areaSqKm": 45228,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "RUS",
+      "LVA"
+    ],
+    "coordinates": [
+      25.0136,
+      58.5953
+    ],
+    "flagUrl": "https://flagcdn.com/es.svg"
+  },
+  {
+    "id": "FIN",
+    "numericId": "246",
+    "name": "Finland",
+    "officialName": "Republic of Finland",
+    "aliases": [
+      "Finland",
+      "Suomi"
+    ],
+    "capital": "Helsinki",
+    "capitalAliases": [
+      "Helsingfors"
+    ],
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "flagEmoji": "🇫🇮",
+    "population": 5540720,
+    "areaSqKm": 338424,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "SWE",
+      "NOR",
+      "RUS"
+    ],
+    "coordinates": [
+      25.7482,
+      61.9241
+    ],
+    "flagUrl": "https://flagcdn.com/fi.svg"
+  },
+  {
+    "id": "FRA",
+    "numericId": "250",
+    "name": "France",
+    "officialName": "French Republic",
+    "aliases": [
+      "France",
+      "French Republic",
+      "La France"
+    ],
+    "capital": "Paris",
+    "capitalAliases": [
+      "Paris"
+    ],
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "flagEmoji": "🇫🇷",
+    "population": 67750000,
+    "areaSqKm": 551695,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "BEL",
+      "LUX",
+      "DEU",
+      "CHE",
+      "ITA",
+      "MCO",
+      "ESP",
+      "AND"
+    ],
+    "coordinates": [
+      2.2137,
+      46.2276
+    ],
+    "flagUrl": "https://flagcdn.com/fr.svg"
+  },
+  {
+    "id": "DEU",
+    "numericId": "276",
+    "name": "Germany",
+    "officialName": "Federal Republic of Germany",
+    "aliases": [
+      "Germany",
+      "Deutschland",
+      "FRG"
+    ],
+    "capital": "Berlin",
+    "capitalAliases": [
+      "Berlin"
+    ],
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "flagEmoji": "🇩🇪",
+    "population": 83190556,
+    "areaSqKm": 357022,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "DNK",
+      "POL",
+      "CZE",
+      "AUT",
+      "CHE",
+      "FRA",
+      "LUX",
+      "BEL",
+      "NLD"
+    ],
+    "coordinates": [
+      10.4515,
+      51.1657
+    ],
+    "flagUrl": "https://flagcdn.com/de.svg"
+  },
+  {
+    "id": "GRC",
+    "numericId": "300",
+    "name": "Greece",
+    "officialName": "Hellenic Republic",
+    "aliases": [
+      "Greece",
+      "Hellas",
+      "Ellada"
+    ],
+    "capital": "Athens",
+    "capitalAliases": [
+      "Athina"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇬🇷",
+    "population": 10423054,
+    "areaSqKm": 131957,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "ALB",
+      "MKD",
+      "BGR",
+      "TUR"
+    ],
+    "coordinates": [
+      21.8243,
+      39.0742
+    ],
+    "flagUrl": "https://flagcdn.com/gr.svg"
+  },
+  {
+    "id": "HUN",
+    "numericId": "348",
+    "name": "Hungary",
+    "officialName": "Hungary",
+    "aliases": [
+      "Hungary",
+      "Magyarorszag"
+    ],
+    "capital": "Budapest",
+    "capitalAliases": [
+      "Budapest"
+    ],
+    "continent": "Europe",
+    "subregion": "Central Europe",
+    "flagEmoji": "🇭🇺",
+    "population": 9749763,
+    "areaSqKm": 93028,
+    "currency": {
+      "code": "HUF",
+      "name": "Hungarian Forint",
+      "symbol": "Ft"
+    },
+    "borders": [
+      "AUT",
+      "SVK",
+      "UKR",
+      "ROU",
+      "SRB",
+      "HRV",
+      "SVN"
+    ],
+    "coordinates": [
+      19.5033,
+      47.1625
+    ],
+    "flagUrl": "https://flagcdn.com/hu.svg"
+  },
+  {
+    "id": "ISL",
+    "numericId": "352",
+    "name": "Iceland",
+    "officialName": "Iceland",
+    "aliases": [
+      "Iceland",
+      "Island"
+    ],
+    "capital": "Reykjavik",
+    "capitalAliases": [
+      "Reykjavik"
+    ],
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "flagEmoji": "🇮🇸",
+    "population": 372520,
+    "areaSqKm": 103000,
+    "currency": {
+      "code": "ISK",
+      "name": "Icelandic Krona",
+      "symbol": "kr"
+    },
+    "borders": [],
+    "coordinates": [
+      -18.6274,
+      64.9631
+    ],
+    "flagUrl": "https://flagcdn.com/is.svg"
+  },
+  {
+    "id": "IRL",
+    "numericId": "372",
+    "name": "Ireland",
+    "officialName": "Republic of Ireland",
+    "aliases": [
+      "Ireland",
+      "Eire",
+      "Republic of Ireland"
+    ],
+    "capital": "Dublin",
+    "capitalAliases": [
+      "Baile Atha Cliath"
+    ],
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "flagEmoji": "🇮🇪",
+    "population": 5028507,
+    "areaSqKm": 70273,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "GBR"
+    ],
+    "coordinates": [
+      -8.2439,
+      53.4129
+    ],
+    "flagUrl": "https://flagcdn.com/ir.svg"
+  },
+  {
+    "id": "ITA",
+    "numericId": "380",
+    "name": "Italy",
+    "officialName": "Italian Republic",
+    "aliases": [
+      "Italy",
+      "Italia"
+    ],
+    "capital": "Rome",
+    "capitalAliases": [
+      "Roma"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇮🇹",
+    "population": 59066000,
+    "areaSqKm": 301340,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "FRA",
+      "CHE",
+      "AUT",
+      "SVN",
+      "SMR",
+      "VAT"
+    ],
+    "coordinates": [
+      12.5674,
+      41.8719
+    ],
+    "flagUrl": "https://flagcdn.com/it.svg"
+  },
+  {
+    "id": "KOS",
+    "numericId": "XKX",
+    "name": "Kosovo",
+    "officialName": "Republic of Kosovo",
+    "aliases": [
+      "Kosovo",
+      "Kosova"
+    ],
+    "capital": "Pristina",
+    "capitalAliases": [
+      "Prishtina"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇽🇰",
+    "population": 1873000,
+    "areaSqKm": 10887,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "SRB",
+      "MNE",
+      "ALB",
+      "MKD"
+    ],
+    "coordinates": [
+      20.903,
+      42.6026
+    ],
+    "flagUrl": "https://flagcdn.com/ko.svg"
+  },
+  {
+    "id": "LVA",
+    "numericId": "428",
+    "name": "Latvia",
+    "officialName": "Republic of Latvia",
+    "aliases": [
+      "Latvia",
+      "Latvija"
+    ],
+    "capital": "Riga",
+    "capitalAliases": [
+      "Riga"
+    ],
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "flagEmoji": "🇱🇻",
+    "population": 1883008,
+    "areaSqKm": 64589,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "EST",
+      "LTU",
+      "BLR",
+      "RUS"
+    ],
+    "coordinates": [
+      24.6032,
+      56.8796
+    ],
+    "flagUrl": "https://flagcdn.com/lv.svg"
+  },
+  {
+    "id": "LIE",
+    "numericId": "438",
+    "name": "Liechtenstein",
+    "officialName": "Principality of Liechtenstein",
+    "aliases": [
+      "Liechtenstein"
+    ],
+    "capital": "Vaduz",
+    "capitalAliases": [
+      "Vaduz"
+    ],
+    "continent": "Europe",
+    "subregion": "Central Europe",
+    "flagEmoji": "🇱🇮",
+    "population": 39327,
+    "areaSqKm": 160,
+    "currency": {
+      "code": "CHF",
+      "name": "Swiss Franc",
+      "symbol": "CHF"
+    },
+    "borders": [
+      "CHE",
+      "AUT"
+    ],
+    "coordinates": [
+      9.5554,
+      47.166
+    ],
+    "flagUrl": "https://flagcdn.com/li.svg"
+  },
+  {
+    "id": "LTU",
+    "numericId": "440",
+    "name": "Lithuania",
+    "officialName": "Republic of Lithuania",
+    "aliases": [
+      "Lithuania",
+      "Lietuva"
+    ],
+    "capital": "Vilnius",
+    "capitalAliases": [
+      "Vilnius"
+    ],
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "flagEmoji": "🇱🇹",
+    "population": 2800839,
+    "areaSqKm": 65300,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "LVA",
+      "BLR",
+      "POL",
+      "RUS"
+    ],
+    "coordinates": [
+      23.8813,
+      55.1694
+    ],
+    "flagUrl": "https://flagcdn.com/lt.svg"
+  },
+  {
+    "id": "LUX",
+    "numericId": "442",
+    "name": "Luxembourg",
+    "officialName": "Grand Duchy of Luxembourg",
+    "aliases": [
+      "Luxembourg",
+      "Luxemburg"
+    ],
+    "capital": "Luxembourg City",
+    "capitalAliases": [
+      "Luxembourg"
+    ],
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "flagEmoji": "🇱🇺",
+    "population": 645397,
+    "areaSqKm": 2586,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "BEL",
+      "FRA",
+      "DEU"
+    ],
+    "coordinates": [
+      6.1296,
+      49.8153
+    ],
+    "flagUrl": "https://flagcdn.com/lu.svg"
+  },
+  {
+    "id": "MLT",
+    "numericId": "470",
+    "name": "Malta",
+    "officialName": "Republic of Malta",
+    "aliases": [
+      "Malta"
+    ],
+    "capital": "Valletta",
+    "capitalAliases": [
+      "Valletta"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇲🇹",
+    "population": 525285,
+    "areaSqKm": 316,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [],
+    "coordinates": [
+      14.3754,
+      35.9375
+    ],
+    "flagUrl": "https://flagcdn.com/ml.svg"
+  },
+  {
+    "id": "MDA",
+    "numericId": "498",
+    "name": "Moldova",
+    "officialName": "Republic of Moldova",
+    "aliases": [
+      "Moldova",
+      "Moldavia"
+    ],
+    "capital": "Chisinau",
+    "capitalAliases": [
+      "Kishinev"
+    ],
+    "continent": "Europe",
+    "subregion": "Eastern Europe",
+    "flagEmoji": "🇲🇩",
+    "population": 2617820,
+    "areaSqKm": 33846,
+    "currency": {
+      "code": "MDL",
+      "name": "Moldovan Leu",
+      "symbol": "L"
+    },
+    "borders": [
+      "ROU",
+      "UKR"
+    ],
+    "coordinates": [
+      28.3699,
+      47.4116
+    ],
+    "flagUrl": "https://flagcdn.com/md.svg"
+  },
+  {
+    "id": "MCO",
+    "numericId": "492",
+    "name": "Monaco",
+    "officialName": "Principality of Monaco",
+    "aliases": [
+      "Monaco"
+    ],
+    "capital": "Monaco",
+    "capitalAliases": [
+      "Monaco"
+    ],
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "flagEmoji": "🇲🇨",
+    "population": 39520,
+    "areaSqKm": 2,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "FRA"
+    ],
+    "coordinates": [
+      7.4128,
+      43.7384
+    ],
+    "flagUrl": "https://flagcdn.com/mc.svg"
+  },
+  {
+    "id": "MNE",
+    "numericId": "499",
+    "name": "Montenegro",
+    "officialName": "Montenegro",
+    "aliases": [
+      "Montenegro",
+      "Crna Gora"
+    ],
+    "capital": "Podgorica",
+    "capitalAliases": [
+      "Podgorica",
+      "Titograd"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇲🇪",
+    "population": 620739,
+    "areaSqKm": 13812,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "BIH",
+      "SRB",
+      "KOS",
+      "ALB",
+      "HRV"
+    ],
+    "coordinates": [
+      19.3744,
+      42.7087
+    ],
+    "flagUrl": "https://flagcdn.com/mn.svg"
+  },
+  {
+    "id": "NLD",
+    "numericId": "528",
+    "name": "Netherlands",
+    "officialName": "Kingdom of the Netherlands",
+    "aliases": [
+      "Netherlands",
+      "Holland",
+      "Nederland"
+    ],
+    "capital": "Amsterdam",
+    "capitalAliases": [
+      "Amsterdam"
+    ],
+    "continent": "Europe",
+    "subregion": "Western Europe",
+    "flagEmoji": "🇳🇱",
+    "population": 17700000,
+    "areaSqKm": 41850,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "DEU",
+      "BEL"
+    ],
+    "coordinates": [
+      5.2913,
+      52.1326
+    ],
+    "flagUrl": "https://flagcdn.com/nl.svg"
+  },
+  {
+    "id": "MKD",
+    "numericId": "807",
+    "name": "North Macedonia",
+    "officialName": "Republic of North Macedonia",
+    "aliases": [
+      "North Macedonia",
+      "Macedonia",
+      "FYROM"
+    ],
+    "capital": "Skopje",
+    "capitalAliases": [
+      "Skopje"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇲🇰",
+    "population": 1836713,
+    "areaSqKm": 25713,
+    "currency": {
+      "code": "MKD",
+      "name": "Macedonian Denar",
+      "symbol": "den"
+    },
+    "borders": [
+      "KOS",
+      "SRB",
+      "BGR",
+      "GRC",
+      "ALB"
+    ],
+    "coordinates": [
+      21.7453,
+      41.6086
+    ],
+    "flagUrl": "https://flagcdn.com/mk.svg"
+  },
+  {
+    "id": "NOR",
+    "numericId": "578",
+    "name": "Norway",
+    "officialName": "Kingdom of Norway",
+    "aliases": [
+      "Norway",
+      "Norge",
+      "Noreg"
+    ],
+    "capital": "Oslo",
+    "capitalAliases": [
+      "Oslo"
+    ],
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "flagEmoji": "🇳🇴",
+    "population": 5434319,
+    "areaSqKm": 385207,
+    "currency": {
+      "code": "NOK",
+      "name": "Norwegian Krone",
+      "symbol": "kr"
+    },
+    "borders": [
+      "SWE",
+      "FIN",
+      "RUS"
+    ],
+    "coordinates": [
+      8.4689,
+      60.472
+    ],
+    "flagUrl": "https://flagcdn.com/no.svg"
+  },
+  {
+    "id": "POL",
+    "numericId": "616",
+    "name": "Poland",
+    "officialName": "Republic of Poland",
+    "aliases": [
+      "Poland",
+      "Polska"
+    ],
+    "capital": "Warsaw",
+    "capitalAliases": [
+      "Warszawa"
+    ],
+    "continent": "Europe",
+    "subregion": "Central Europe",
+    "flagEmoji": "🇵🇱",
+    "population": 37750000,
+    "areaSqKm": 312696,
+    "currency": {
+      "code": "PLN",
+      "name": "Polish Zloty",
+      "symbol": "zł"
+    },
+    "borders": [
+      "DEU",
+      "CZE",
+      "SVK",
+      "UKR",
+      "BLR",
+      "LTU",
+      "RUS"
+    ],
+    "coordinates": [
+      19.1451,
+      51.9194
+    ],
+    "flagUrl": "https://flagcdn.com/po.svg"
+  },
+  {
+    "id": "PRT",
+    "numericId": "620",
+    "name": "Portugal",
+    "officialName": "Portuguese Republic",
+    "aliases": [
+      "Portugal"
+    ],
+    "capital": "Lisbon",
+    "capitalAliases": [
+      "Lisboa"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇵🇹",
+    "population": 10325147,
+    "areaSqKm": 92212,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "ESP"
+    ],
+    "coordinates": [
+      -8.2245,
+      39.3999
+    ],
+    "flagUrl": "https://flagcdn.com/pr.svg"
+  },
+  {
+    "id": "ROU",
+    "numericId": "642",
+    "name": "Romania",
+    "officialName": "Romania",
+    "aliases": [
+      "Romania",
+      "Roumania"
+    ],
+    "capital": "Bucharest",
+    "capitalAliases": [
+      "Bucuresti"
+    ],
+    "continent": "Europe",
+    "subregion": "Eastern Europe",
+    "flagEmoji": "🇷🇴",
+    "population": 19120000,
+    "areaSqKm": 238391,
+    "currency": {
+      "code": "RON",
+      "name": "Romanian Leu",
+      "symbol": "lei"
+    },
+    "borders": [
+      "UKR",
+      "MDA",
+      "BGR",
+      "SRB",
+      "HUN"
+    ],
+    "coordinates": [
+      24.9668,
+      45.9432
+    ],
+    "flagUrl": "https://flagcdn.com/ro.svg"
+  },
+  {
+    "id": "RUS",
+    "numericId": "643",
+    "name": "Russia",
+    "officialName": "Russian Federation",
+    "aliases": [
+      "Russia",
+      "Russian Federation",
+      "Rossiya"
+    ],
+    "capital": "Moscow",
+    "capitalAliases": [
+      "Moskva"
+    ],
+    "continent": "Europe",
+    "subregion": "Eastern Europe",
+    "flagEmoji": "🇷🇺",
+    "population": 144000000,
+    "areaSqKm": 17098242,
+    "currency": {
+      "code": "RUB",
+      "name": "Russian Ruble",
+      "symbol": "₽"
+    },
+    "borders": [
+      "NOR",
+      "FIN",
+      "EST",
+      "LVA",
+      "LTU",
+      "POL",
+      "BLR",
+      "UKR",
+      "GEO",
+      "AZE",
+      "KAZ",
+      "CHN",
+      "MNG",
+      "PRK"
+    ],
+    "coordinates": [
+      105.3188,
+      61.524
+    ],
+    "flagUrl": "https://flagcdn.com/ru.svg"
+  },
+  {
+    "id": "SMR",
+    "numericId": "674",
+    "name": "San Marino",
+    "officialName": "Republic of San Marino",
+    "aliases": [
+      "San Marino"
+    ],
+    "capital": "San Marino",
+    "capitalAliases": [
+      "San Marino"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇸🇲",
+    "population": 33685,
+    "areaSqKm": 61,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "ITA"
+    ],
+    "coordinates": [
+      12.4578,
+      43.9424
+    ],
+    "flagUrl": "https://flagcdn.com/sm.svg"
+  },
+  {
+    "id": "SRB",
+    "numericId": "688",
+    "name": "Serbia",
+    "officialName": "Republic of Serbia",
+    "aliases": [
+      "Serbia",
+      "Srbija"
+    ],
+    "capital": "Belgrade",
+    "capitalAliases": [
+      "Beograd"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇷🇸",
+    "population": 6871547,
+    "areaSqKm": 88361,
+    "currency": {
+      "code": "RSD",
+      "name": "Serbian Dinar",
+      "symbol": "дин."
+    },
+    "borders": [
+      "HUN",
+      "ROU",
+      "BGR",
+      "MKD",
+      "KOS",
+      "MNE",
+      "BIH",
+      "HRV"
+    ],
+    "coordinates": [
+      21.0059,
+      44.0165
+    ],
+    "flagUrl": "https://flagcdn.com/sr.svg"
+  },
+  {
+    "id": "SVK",
+    "numericId": "703",
+    "name": "Slovakia",
+    "officialName": "Slovak Republic",
+    "aliases": [
+      "Slovakia",
+      "Slovensko",
+      "Slovak Republic"
+    ],
+    "capital": "Bratislava",
+    "capitalAliases": [
+      "Bratislava"
+    ],
+    "continent": "Europe",
+    "subregion": "Central Europe",
+    "flagEmoji": "🇸🇰",
+    "population": 5459781,
+    "areaSqKm": 49037,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "CZE",
+      "POL",
+      "UKR",
+      "HUN",
+      "AUT"
+    ],
+    "coordinates": [
+      19.699,
+      48.669
+    ],
+    "flagUrl": "https://flagcdn.com/sv.svg"
+  },
+  {
+    "id": "SVN",
+    "numericId": "705",
+    "name": "Slovenia",
+    "officialName": "Republic of Slovenia",
+    "aliases": [
+      "Slovenia",
+      "Slovenija"
+    ],
+    "capital": "Ljubljana",
+    "capitalAliases": [
+      "Ljubljana"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇸🇮",
+    "population": 2107180,
+    "areaSqKm": 20273,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "AUT",
+      "HUN",
+      "HRV",
+      "ITA"
+    ],
+    "coordinates": [
+      14.9955,
+      46.1512
+    ],
+    "flagUrl": "https://flagcdn.com/sv.svg"
+  },
+  {
+    "id": "ESP",
+    "numericId": "724",
+    "name": "Spain",
+    "officialName": "Kingdom of Spain",
+    "aliases": [
+      "Spain",
+      "Espana"
+    ],
+    "capital": "Madrid",
+    "capitalAliases": [
+      "Madrid"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇪🇸",
+    "population": 47432805,
+    "areaSqKm": 505990,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "FRA",
+      "AND",
+      "PRT",
+      "MAR"
+    ],
+    "coordinates": [
+      -3.7492,
+      40.4637
+    ],
+    "flagUrl": "https://flagcdn.com/es.svg"
+  },
+  {
+    "id": "SWE",
+    "numericId": "752",
+    "name": "Sweden",
+    "officialName": "Kingdom of Sweden",
+    "aliases": [
+      "Sweden",
+      "Sverige"
+    ],
+    "capital": "Stockholm",
+    "capitalAliases": [
+      "Stockholm"
+    ],
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "flagEmoji": "🇸🇪",
+    "population": 10452326,
+    "areaSqKm": 450295,
+    "currency": {
+      "code": "SEK",
+      "name": "Swedish Krona",
+      "symbol": "kr"
+    },
+    "borders": [
+      "NOR",
+      "FIN"
+    ],
+    "coordinates": [
+      18.6435,
+      60.1282
+    ],
+    "flagUrl": "https://flagcdn.com/sw.svg"
+  },
+  {
+    "id": "CHE",
+    "numericId": "756",
+    "name": "Switzerland",
+    "officialName": "Swiss Confederation",
+    "aliases": [
+      "Switzerland",
+      "Swiss",
+      "Schweiz",
+      "Suisse",
+      "Svizzera"
+    ],
+    "capital": "Bern",
+    "capitalAliases": [
+      "Berne"
+    ],
+    "continent": "Europe",
+    "subregion": "Central Europe",
+    "flagEmoji": "🇨🇭",
+    "population": 8738791,
+    "areaSqKm": 41285,
+    "currency": {
+      "code": "CHF",
+      "name": "Swiss Franc",
+      "symbol": "CHF"
+    },
+    "borders": [
+      "DEU",
+      "FRA",
+      "ITA",
+      "AUT",
+      "LIE"
+    ],
+    "coordinates": [
+      8.2275,
+      46.8182
+    ],
+    "flagUrl": "https://flagcdn.com/ch.svg"
+  },
+  {
+    "id": "UKR",
+    "numericId": "804",
+    "name": "Ukraine",
+    "officialName": "Ukraine",
+    "aliases": [
+      "Ukraine",
+      "Ukrayina"
+    ],
+    "capital": "Kyiv",
+    "capitalAliases": [
+      "Kiev"
+    ],
+    "continent": "Europe",
+    "subregion": "Eastern Europe",
+    "flagEmoji": "🇺🇦",
+    "population": 43792855,
+    "areaSqKm": 603550,
+    "currency": {
+      "code": "UAH",
+      "name": "Ukrainian Hryvnia",
+      "symbol": "₴"
+    },
+    "borders": [
+      "BLR",
+      "RUS",
+      "MDA",
+      "ROU",
+      "HUN",
+      "SVK",
+      "POL"
+    ],
+    "coordinates": [
+      31.1656,
+      48.3794
+    ],
+    "flagUrl": "https://flagcdn.com/uk.svg"
+  },
+  {
+    "id": "GBR",
+    "numericId": "826",
+    "name": "United Kingdom",
+    "officialName": "United Kingdom of Great Britain and Northern Ireland",
+    "aliases": [
+      "United Kingdom",
+      "UK",
+      "Britain",
+      "Great Britain",
+      "England",
+      "Scotland",
+      "Wales"
+    ],
+    "capital": "London",
+    "capitalAliases": [
+      "London"
+    ],
+    "continent": "Europe",
+    "subregion": "Northern Europe",
+    "flagEmoji": "🇬🇧",
+    "population": 67326569,
+    "areaSqKm": 242495,
+    "currency": {
+      "code": "GBP",
+      "name": "British Pound",
+      "symbol": "£"
+    },
+    "borders": [
+      "IRL"
+    ],
+    "coordinates": [
+      -3.436,
+      55.3781
+    ],
+    "flagUrl": "https://flagcdn.com/gb.svg"
+  },
+  {
+    "id": "VAT",
+    "numericId": "336",
+    "name": "Vatican City",
+    "officialName": "Vatican City State",
+    "aliases": [
+      "Vatican City",
+      "Vatican",
+      "Holy See"
+    ],
+    "capital": "Vatican City",
+    "capitalAliases": [
+      "Vatican City"
+    ],
+    "continent": "Europe",
+    "subregion": "Southern Europe",
+    "flagEmoji": "🇻🇦",
+    "population": 825,
+    "areaSqKm": 0.49,
+    "currency": {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    "borders": [
+      "ITA"
+    ],
+    "coordinates": [
+      12.4534,
+      41.9029
+    ],
+    "flagUrl": "https://flagcdn.com/va.svg"
+  },
+  {
+    "id": "AFG",
+    "numericId": "004",
+    "name": "Afghanistan",
+    "officialName": "Islamic Republic of Afghanistan",
+    "aliases": [
+      "Afghanistan"
+    ],
+    "capital": "Kabul",
+    "capitalAliases": [
+      "Kabul"
+    ],
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "flagEmoji": "🇦🇫",
+    "population": 41128771,
+    "areaSqKm": 652864,
+    "currency": {
+      "code": "AFN",
+      "name": "Afghan Afghani",
+      "symbol": "؋"
+    },
+    "borders": [
+      "CHN",
+      "IRN",
+      "PAK",
+      "TJK",
+      "TKM",
+      "UZB"
+    ],
+    "coordinates": [
+      67.7099,
+      33.9391
+    ],
+    "flagUrl": "https://flagcdn.com/af.svg"
+  },
+  {
+    "id": "ARM",
+    "numericId": "051",
+    "name": "Armenia",
+    "officialName": "Republic of Armenia",
+    "aliases": [
+      "Armenia",
+      "Hayastan"
+    ],
+    "capital": "Yerevan",
+    "capitalAliases": [
+      "Yerevan"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇦🇲",
+    "population": 2780469,
+    "areaSqKm": 29743,
+    "currency": {
+      "code": "AMD",
+      "name": "Armenian Dram",
+      "symbol": "֏"
+    },
+    "borders": [
+      "AZE",
+      "GEO",
+      "IRN",
+      "TUR"
+    ],
+    "coordinates": [
+      45.0382,
+      40.0691
+    ],
+    "flagUrl": "https://flagcdn.com/ar.svg"
+  },
+  {
+    "id": "AZE",
+    "numericId": "031",
+    "name": "Azerbaijan",
+    "officialName": "Republic of Azerbaijan",
+    "aliases": [
+      "Azerbaijan"
+    ],
+    "capital": "Baku",
+    "capitalAliases": [
+      "Baku"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇦🇿",
+    "population": 10175016,
+    "areaSqKm": 86600,
+    "currency": {
+      "code": "AZN",
+      "name": "Azerbaijani Manat",
+      "symbol": "₼"
+    },
+    "borders": [
+      "ARM",
+      "GEO",
+      "IRN",
+      "RUS",
+      "TUR"
+    ],
+    "coordinates": [
+      47.5769,
+      40.1431
+    ],
+    "flagUrl": "https://flagcdn.com/az.svg"
+  },
+  {
+    "id": "BHR",
+    "numericId": "048",
+    "name": "Bahrain",
+    "officialName": "Kingdom of Bahrain",
+    "aliases": [
+      "Bahrain"
+    ],
+    "capital": "Manama",
+    "capitalAliases": [
+      "Manama"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇧🇭",
+    "population": 1472233,
+    "areaSqKm": 765,
+    "currency": {
+      "code": "BHD",
+      "name": "Bahraini Dinar",
+      "symbol": ".د.ب"
+    },
+    "borders": [],
+    "coordinates": [
+      50.5577,
+      26.0667
+    ],
+    "flagUrl": "https://flagcdn.com/bh.svg"
+  },
+  {
+    "id": "BGD",
+    "numericId": "050",
+    "name": "Bangladesh",
+    "officialName": "People's Republic of Bangladesh",
+    "aliases": [
+      "Bangladesh",
+      "Bengal"
+    ],
+    "capital": "Dhaka",
+    "capitalAliases": [
+      "Dhaka",
+      "Dacca"
+    ],
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "flagEmoji": "🇧🇩",
+    "population": 171186372,
+    "areaSqKm": 147570,
+    "currency": {
+      "code": "BDT",
+      "name": "Bangladeshi Taka",
+      "symbol": "৳"
+    },
+    "borders": [
+      "MMR",
+      "IND"
+    ],
+    "coordinates": [
+      90.3563,
+      23.685
+    ],
+    "flagUrl": "https://flagcdn.com/bg.svg"
+  },
+  {
+    "id": "BTN",
+    "numericId": "064",
+    "name": "Bhutan",
+    "officialName": "Kingdom of Bhutan",
+    "aliases": [
+      "Bhutan"
+    ],
+    "capital": "Thimphu",
+    "capitalAliases": [
+      "Thimphu"
+    ],
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "flagEmoji": "🇧🇹",
+    "population": 782455,
+    "areaSqKm": 38394,
+    "currency": {
+      "code": "BTN",
+      "name": "Bhutanese Ngultrum",
+      "symbol": "Nu."
+    },
+    "borders": [
+      "CHN",
+      "IND"
+    ],
+    "coordinates": [
+      90.4336,
+      27.5142
+    ],
+    "flagUrl": "https://flagcdn.com/bt.svg"
+  },
+  {
+    "id": "BRN",
+    "numericId": "096",
+    "name": "Brunei",
+    "officialName": "Nation of Brunei, the Abode of Peace",
+    "aliases": [
+      "Brunei",
+      "Brunei Darussalam"
+    ],
+    "capital": "Bandar Seri Begawan",
+    "capitalAliases": [
+      "Bandar Seri Begawan"
+    ],
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "flagEmoji": "🇧🇳",
+    "population": 449002,
+    "areaSqKm": 5765,
+    "currency": {
+      "code": "BND",
+      "name": "Brunei Dollar",
+      "symbol": "B$"
+    },
+    "borders": [
+      "MYS"
+    ],
+    "coordinates": [
+      114.7277,
+      4.5353
+    ],
+    "flagUrl": "https://flagcdn.com/br.svg"
+  },
+  {
+    "id": "KHM",
+    "numericId": "116",
+    "name": "Cambodia",
+    "officialName": "Kingdom of Cambodia",
+    "aliases": [
+      "Cambodia",
+      "Kampuchea"
+    ],
+    "capital": "Phnom Penh",
+    "capitalAliases": [
+      "Phnom Penh"
+    ],
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "flagEmoji": "🇰🇭",
+    "population": 16767842,
+    "areaSqKm": 181035,
+    "currency": {
+      "code": "KHR",
+      "name": "Cambodian Riel",
+      "symbol": "៛"
+    },
+    "borders": [
+      "LAO",
+      "THA",
+      "VNM"
+    ],
+    "coordinates": [
+      104.991,
+      12.5657
+    ],
+    "flagUrl": "https://flagcdn.com/kh.svg"
+  },
+  {
+    "id": "CHN",
+    "numericId": "156",
+    "name": "China",
+    "officialName": "People's Republic of China",
+    "aliases": [
+      "China",
+      "PRC",
+      "People's Republic of China",
+      "Zhongguo"
+    ],
+    "capital": "Beijing",
+    "capitalAliases": [
+      "Beijing",
+      "Peking"
+    ],
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "flagEmoji": "🇨🇳",
+    "population": 1411750000,
+    "areaSqKm": 9596961,
+    "currency": {
+      "code": "CNY",
+      "name": "Chinese Yuan",
+      "symbol": "¥"
+    },
+    "borders": [
+      "AFG",
+      "BTN",
+      "MMR",
+      "IND",
+      "KAZ",
+      "PRK",
+      "KGZ",
+      "LAO",
+      "MNG",
+      "NPL",
+      "PAK",
+      "RUS",
+      "TJK",
+      "VNM"
+    ],
+    "coordinates": [
+      104.1954,
+      35.8617
+    ],
+    "flagUrl": "https://flagcdn.com/ch.svg"
+  },
+  {
+    "id": "GEO",
+    "numericId": "268",
+    "name": "Georgia",
+    "officialName": "Georgia",
+    "aliases": [
+      "Georgia",
+      "Sakartvelo"
+    ],
+    "capital": "Tbilisi",
+    "capitalAliases": [
+      "Tbilisi"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇬🇪",
+    "population": 3688647,
+    "areaSqKm": 69700,
+    "currency": {
+      "code": "GEL",
+      "name": "Georgian Lari",
+      "symbol": "₾"
+    },
+    "borders": [
+      "ARM",
+      "AZE",
+      "RUS",
+      "TUR"
+    ],
+    "coordinates": [
+      43.3569,
+      42.3154
+    ],
+    "flagUrl": "https://flagcdn.com/ge.svg"
+  },
+  {
+    "id": "IND",
+    "numericId": "356",
+    "name": "India",
+    "officialName": "Republic of India",
+    "aliases": [
+      "India",
+      "Bharat",
+      "Hindustan"
+    ],
+    "capital": "New Delhi",
+    "capitalAliases": [
+      "New Delhi",
+      "Delhi"
+    ],
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "flagEmoji": "🇮🇳",
+    "population": 1408000000,
+    "areaSqKm": 3287263,
+    "currency": {
+      "code": "INR",
+      "name": "Indian Rupee",
+      "symbol": "₹"
+    },
+    "borders": [
+      "BGD",
+      "BTN",
+      "MMR",
+      "CHN",
+      "NPL",
+      "PAK"
+    ],
+    "coordinates": [
+      78.9629,
+      20.5937
+    ],
+    "flagUrl": "https://flagcdn.com/in.svg"
+  },
+  {
+    "id": "IDN",
+    "numericId": "360",
+    "name": "Indonesia",
+    "officialName": "Republic of Indonesia",
+    "aliases": [
+      "Indonesia"
+    ],
+    "capital": "Jakarta",
+    "capitalAliases": [
+      "Jakarta",
+      "Nusantara"
+    ],
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "flagEmoji": "🇮🇩",
+    "population": 275500000,
+    "areaSqKm": 1904569,
+    "currency": {
+      "code": "IDR",
+      "name": "Indonesian Rupiah",
+      "symbol": "Rp"
+    },
+    "borders": [
+      "TLS",
+      "MYS",
+      "PNG"
+    ],
+    "coordinates": [
+      113.9213,
+      -0.7893
+    ],
+    "flagUrl": "https://flagcdn.com/id.svg"
+  },
+  {
+    "id": "IRN",
+    "numericId": "364",
+    "name": "Iran",
+    "officialName": "Islamic Republic of Iran",
+    "aliases": [
+      "Iran",
+      "Persia"
+    ],
+    "capital": "Tehran",
+    "capitalAliases": [
+      "Tehran"
+    ],
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "flagEmoji": "🇮🇷",
+    "population": 88550570,
+    "areaSqKm": 1648195,
+    "currency": {
+      "code": "IRR",
+      "name": "Iranian Rial",
+      "symbol": "﷼"
+    },
+    "borders": [
+      "AFG",
+      "ARM",
+      "AZE",
+      "IRQ",
+      "PAK",
+      "TUR",
+      "TKM"
+    ],
+    "coordinates": [
+      53.688,
+      32.4279
+    ],
+    "flagUrl": "https://flagcdn.com/ir.svg"
+  },
+  {
+    "id": "IRQ",
+    "numericId": "368",
+    "name": "Iraq",
+    "officialName": "Republic of Iraq",
+    "aliases": [
+      "Iraq"
+    ],
+    "capital": "Baghdad",
+    "capitalAliases": [
+      "Baghdad"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇮🇶",
+    "population": 44496122,
+    "areaSqKm": 438317,
+    "currency": {
+      "code": "IQD",
+      "name": "Iraqi Dinar",
+      "symbol": "ع.د"
+    },
+    "borders": [
+      "IRN",
+      "JOR",
+      "KWT",
+      "SAU",
+      "SYR",
+      "TUR"
+    ],
+    "coordinates": [
+      43.6793,
+      33.2232
+    ],
+    "flagUrl": "https://flagcdn.com/ir.svg"
+  },
+  {
+    "id": "ISR",
+    "numericId": "376",
+    "name": "Israel",
+    "officialName": "State of Israel",
+    "aliases": [
+      "Israel"
+    ],
+    "capital": "Jerusalem",
+    "capitalAliases": [
+      "Jerusalem"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇮🇱",
+    "population": 9557500,
+    "areaSqKm": 22072,
+    "currency": {
+      "code": "ILS",
+      "name": "Israeli New Shekel",
+      "symbol": "₪"
+    },
+    "borders": [
+      "EGY",
+      "JOR",
+      "LBN",
+      "SYR",
+      "PSE"
+    ],
+    "coordinates": [
+      34.8516,
+      31.0461
+    ],
+    "flagUrl": "https://flagcdn.com/is.svg"
+  },
+  {
+    "id": "JPN",
+    "numericId": "392",
+    "name": "Japan",
+    "officialName": "Japan",
+    "aliases": [
+      "Japan",
+      "Nippon",
+      "Nihon"
+    ],
+    "capital": "Tokyo",
+    "capitalAliases": [
+      "Tokyo"
+    ],
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "flagEmoji": "🇯🇵",
+    "population": 125124986,
+    "areaSqKm": 377975,
+    "currency": {
+      "code": "JPY",
+      "name": "Japanese Yen",
+      "symbol": "¥"
+    },
+    "borders": [],
+    "coordinates": [
+      138.2529,
+      36.2048
+    ],
+    "flagUrl": "https://flagcdn.com/jp.svg"
+  },
+  {
+    "id": "JOR",
+    "numericId": "400",
+    "name": "Jordan",
+    "officialName": "Hashemite Kingdom of Jordan",
+    "aliases": [
+      "Jordan"
+    ],
+    "capital": "Amman",
+    "capitalAliases": [
+      "Amman"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇯🇴",
+    "population": 11285869,
+    "areaSqKm": 89342,
+    "currency": {
+      "code": "JOD",
+      "name": "Jordanian Dinar",
+      "symbol": "د.ا"
+    },
+    "borders": [
+      "IRQ",
+      "ISR",
+      "SAU",
+      "SYR",
+      "PSE"
+    ],
+    "coordinates": [
+      36.2384,
+      30.5852
+    ],
+    "flagUrl": "https://flagcdn.com/jo.svg"
+  },
+  {
+    "id": "KAZ",
+    "numericId": "398",
+    "name": "Kazakhstan",
+    "officialName": "Republic of Kazakhstan",
+    "aliases": [
+      "Kazakhstan"
+    ],
+    "capital": "Astana",
+    "capitalAliases": [
+      "Astana",
+      "Nur-Sultan"
+    ],
+    "continent": "Asia",
+    "subregion": "Central Asia",
+    "flagEmoji": "🇰🇿",
+    "population": 19621972,
+    "areaSqKm": 2724900,
+    "currency": {
+      "code": "KZT",
+      "name": "Kazakhstani Tenge",
+      "symbol": "₸"
+    },
+    "borders": [
+      "CHN",
+      "KGZ",
+      "RUS",
+      "TKM",
+      "UZB"
+    ],
+    "coordinates": [
+      66.9237,
+      48.0196
+    ],
+    "flagUrl": "https://flagcdn.com/ka.svg"
+  },
+  {
+    "id": "KWT",
+    "numericId": "414",
+    "name": "Kuwait",
+    "officialName": "State of Kuwait",
+    "aliases": [
+      "Kuwait"
+    ],
+    "capital": "Kuwait City",
+    "capitalAliases": [
+      "Kuwait City"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇰🇼",
+    "population": 4268873,
+    "areaSqKm": 17818,
+    "currency": {
+      "code": "KWD",
+      "name": "Kuwaiti Dinar",
+      "symbol": "د.ك"
+    },
+    "borders": [
+      "IRQ",
+      "SAU"
+    ],
+    "coordinates": [
+      47.4818,
+      29.3117
+    ],
+    "flagUrl": "https://flagcdn.com/kw.svg"
+  },
+  {
+    "id": "KGZ",
+    "numericId": "417",
+    "name": "Kyrgyzstan",
+    "officialName": "Kyrgyz Republic",
+    "aliases": [
+      "Kyrgyzstan",
+      "Kirghizia"
+    ],
+    "capital": "Bishkek",
+    "capitalAliases": [
+      "Bishkek",
+      "Frunze"
+    ],
+    "continent": "Asia",
+    "subregion": "Central Asia",
+    "flagEmoji": "🇰🇬",
+    "population": 6803300,
+    "areaSqKm": 199951,
+    "currency": {
+      "code": "KGS",
+      "name": "Kyrgyzstani Som",
+      "symbol": "с"
+    },
+    "borders": [
+      "CHN",
+      "KAZ",
+      "TJK",
+      "UZB"
+    ],
+    "coordinates": [
+      74.7661,
+      41.2044
+    ],
+    "flagUrl": "https://flagcdn.com/kg.svg"
+  },
+  {
+    "id": "LAO",
+    "numericId": "418",
+    "name": "Laos",
+    "officialName": "Lao People's Democratic Republic",
+    "aliases": [
+      "Laos"
+    ],
+    "capital": "Vientiane",
+    "capitalAliases": [
+      "Vientiane"
+    ],
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "flagEmoji": "🇱🇦",
+    "population": 7529475,
+    "areaSqKm": 236800,
+    "currency": {
+      "code": "LAK",
+      "name": "Lao Kip",
+      "symbol": "₭"
+    },
+    "borders": [
+      "MMR",
+      "CHN",
+      "KHM",
+      "THA",
+      "VNM"
+    ],
+    "coordinates": [
+      102.4955,
+      19.8563
+    ],
+    "flagUrl": "https://flagcdn.com/la.svg"
+  },
+  {
+    "id": "LBN",
+    "numericId": "422",
+    "name": "Lebanon",
+    "officialName": "Lebanese Republic",
+    "aliases": [
+      "Lebanon"
+    ],
+    "capital": "Beirut",
+    "capitalAliases": [
+      "Beirut"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇱🇧",
+    "population": 5490000,
+    "areaSqKm": 10452,
+    "currency": {
+      "code": "LBP",
+      "name": "Lebanese Pound",
+      "symbol": "ل.ل"
+    },
+    "borders": [
+      "ISR",
+      "SYR"
+    ],
+    "coordinates": [
+      35.8623,
+      33.8547
+    ],
+    "flagUrl": "https://flagcdn.com/lb.svg"
+  },
+  {
+    "id": "MYS",
+    "numericId": "458",
+    "name": "Malaysia",
+    "officialName": "Malaysia",
+    "aliases": [
+      "Malaysia"
+    ],
+    "capital": "Kuala Lumpur",
+    "capitalAliases": [
+      "Kuala Lumpur",
+      "Putrajaya"
+    ],
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "flagEmoji": "🇲🇾",
+    "population": 33938221,
+    "areaSqKm": 330803,
+    "currency": {
+      "code": "MYR",
+      "name": "Malaysian Ringgit",
+      "symbol": "RM"
+    },
+    "borders": [
+      "BRN",
+      "IDN",
+      "THA"
+    ],
+    "coordinates": [
+      101.9758,
+      4.2105
+    ],
+    "flagUrl": "https://flagcdn.com/my.svg"
+  },
+  {
+    "id": "MDV",
+    "numericId": "462",
+    "name": "Maldives",
+    "officialName": "Republic of Maldives",
+    "aliases": [
+      "Maldives"
+    ],
+    "capital": "Male",
+    "capitalAliases": [
+      "Male"
+    ],
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "flagEmoji": "🇲🇻",
+    "population": 523781,
+    "areaSqKm": 300,
+    "currency": {
+      "code": "MVR",
+      "name": "Maldivian Rufiyaa",
+      "symbol": ".ރ"
+    },
+    "borders": [],
+    "coordinates": [
+      73.2207,
+      3.2028
+    ],
+    "flagUrl": "https://flagcdn.com/md.svg"
+  },
+  {
+    "id": "MNG",
+    "numericId": "496",
+    "name": "Mongolia",
+    "officialName": "Mongolia",
+    "aliases": [
+      "Mongolia"
+    ],
+    "capital": "Ulaanbaatar",
+    "capitalAliases": [
+      "Ulaanbaatar",
+      "Ulan Bator"
+    ],
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "flagEmoji": "🇲🇳",
+    "population": 3398366,
+    "areaSqKm": 1564116,
+    "currency": {
+      "code": "MNT",
+      "name": "Mongolian Tugrik",
+      "symbol": "₮"
+    },
+    "borders": [
+      "CHN",
+      "RUS"
+    ],
+    "coordinates": [
+      103.8467,
+      46.8625
+    ],
+    "flagUrl": "https://flagcdn.com/mn.svg"
+  },
+  {
+    "id": "MMR",
+    "numericId": "104",
+    "name": "Myanmar",
+    "officialName": "Republic of the Union of Myanmar",
+    "aliases": [
+      "Myanmar",
+      "Burma"
+    ],
+    "capital": "Naypyidaw",
+    "capitalAliases": [
+      "Naypyidaw",
+      "Rangoon",
+      "Yangon"
+    ],
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "flagEmoji": "🇲🇲",
+    "population": 54179306,
+    "areaSqKm": 676578,
+    "currency": {
+      "code": "MMK",
+      "name": "Myanmar Kyat",
+      "symbol": "Ks"
+    },
+    "borders": [
+      "BGD",
+      "CHN",
+      "IND",
+      "LAO",
+      "THA"
+    ],
+    "coordinates": [
+      95.956,
+      21.9162
+    ],
+    "flagUrl": "https://flagcdn.com/mm.svg"
+  },
+  {
+    "id": "NPL",
+    "numericId": "524",
+    "name": "Nepal",
+    "officialName": "Federal Democratic Republic of Nepal",
+    "aliases": [
+      "Nepal"
+    ],
+    "capital": "Kathmandu",
+    "capitalAliases": [
+      "Kathmandu"
+    ],
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "flagEmoji": "🇳🇵",
+    "population": 30547580,
+    "areaSqKm": 147181,
+    "currency": {
+      "code": "NPR",
+      "name": "Nepalese Rupee",
+      "symbol": "Rs."
+    },
+    "borders": [
+      "CHN",
+      "IND"
+    ],
+    "coordinates": [
+      84.124,
+      28.3949
+    ],
+    "flagUrl": "https://flagcdn.com/np.svg"
+  },
+  {
+    "id": "PRK",
+    "numericId": "408",
+    "name": "North Korea",
+    "officialName": "Democratic People's Republic of Korea",
+    "aliases": [
+      "North Korea",
+      "DPRK"
+    ],
+    "capital": "Pyongyang",
+    "capitalAliases": [
+      "Pyongyang"
+    ],
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "flagEmoji": "🇰🇵",
+    "population": 26069416,
+    "areaSqKm": 120538,
+    "currency": {
+      "code": "KPW",
+      "name": "North Korean Won",
+      "symbol": "₩"
+    },
+    "borders": [
+      "CHN",
+      "RUS",
+      "KOR"
+    ],
+    "coordinates": [
+      127.5101,
+      40.3399
+    ],
+    "flagUrl": "https://flagcdn.com/pr.svg"
+  },
+  {
+    "id": "OMN",
+    "numericId": "512",
+    "name": "Oman",
+    "officialName": "Sultanate of Oman",
+    "aliases": [
+      "Oman"
+    ],
+    "capital": "Muscat",
+    "capitalAliases": [
+      "Muscat"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇴🇲",
+    "population": 4576298,
+    "areaSqKm": 309500,
+    "currency": {
+      "code": "OMR",
+      "name": "Omani Rial",
+      "symbol": "ر.ع."
+    },
+    "borders": [
+      "SAU",
+      "ARE",
+      "YEM"
+    ],
+    "coordinates": [
+      55.9233,
+      21.4735
+    ],
+    "flagUrl": "https://flagcdn.com/om.svg"
+  },
+  {
+    "id": "PAK",
+    "numericId": "586",
+    "name": "Pakistan",
+    "officialName": "Islamic Republic of Pakistan",
+    "aliases": [
+      "Pakistan"
+    ],
+    "capital": "Islamabad",
+    "capitalAliases": [
+      "Islamabad"
+    ],
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "flagEmoji": "🇵🇰",
+    "population": 235800000,
+    "areaSqKm": 881912,
+    "currency": {
+      "code": "PKR",
+      "name": "Pakistani Rupee",
+      "symbol": "₨"
+    },
+    "borders": [
+      "AFG",
+      "CHN",
+      "IND",
+      "IRN"
+    ],
+    "coordinates": [
+      69.3451,
+      30.3753
+    ],
+    "flagUrl": "https://flagcdn.com/pa.svg"
+  },
+  {
+    "id": "PSE",
+    "numericId": "275",
+    "name": "Palestine",
+    "officialName": "State of Palestine",
+    "aliases": [
+      "Palestine"
+    ],
+    "capital": "Ramallah",
+    "capitalAliases": [
+      "Ramallah",
+      "East Jerusalem",
+      "Jerusalem"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇵🇸",
+    "population": 5250072,
+    "areaSqKm": 6020,
+    "currency": {
+      "code": "ILS",
+      "name": "Israeli Shekel",
+      "symbol": "₪"
+    },
+    "borders": [
+      "ISR",
+      "EGY",
+      "JOR"
+    ],
+    "coordinates": [
+      35.2332,
+      31.9522
+    ],
+    "flagUrl": "https://flagcdn.com/ps.svg"
+  },
+  {
+    "id": "PHL",
+    "numericId": "608",
+    "name": "Philippines",
+    "officialName": "Republic of the Philippines",
+    "aliases": [
+      "Philippines",
+      "Pilipinas"
+    ],
+    "capital": "Manila",
+    "capitalAliases": [
+      "Manila"
+    ],
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "flagEmoji": "🇵🇭",
+    "population": 115559009,
+    "areaSqKm": 300000,
+    "currency": {
+      "code": "PHP",
+      "name": "Philippine Peso",
+      "symbol": "₱"
+    },
+    "borders": [],
+    "coordinates": [
+      121.774,
+      12.8797
+    ],
+    "flagUrl": "https://flagcdn.com/ph.svg"
+  },
+  {
+    "id": "QAT",
+    "numericId": "634",
+    "name": "Qatar",
+    "officialName": "State of Qatar",
+    "aliases": [
+      "Qatar"
+    ],
+    "capital": "Doha",
+    "capitalAliases": [
+      "Doha"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇶🇦",
+    "population": 2695122,
+    "areaSqKm": 11586,
+    "currency": {
+      "code": "QAR",
+      "name": "Qatari Riyal",
+      "symbol": "ر.ق"
+    },
+    "borders": [
+      "SAU"
+    ],
+    "coordinates": [
+      51.1839,
+      25.3548
+    ],
+    "flagUrl": "https://flagcdn.com/qa.svg"
+  },
+  {
+    "id": "SAU",
+    "numericId": "682",
+    "name": "Saudi Arabia",
+    "officialName": "Kingdom of Saudi Arabia",
+    "aliases": [
+      "Saudi Arabia",
+      "KSA"
+    ],
+    "capital": "Riyadh",
+    "capitalAliases": [
+      "Riyadh"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇸🇦",
+    "population": 36408820,
+    "areaSqKm": 2149690,
+    "currency": {
+      "code": "SAR",
+      "name": "Saudi Riyal",
+      "symbol": "ر.س"
+    },
+    "borders": [
+      "IRQ",
+      "JOR",
+      "KWT",
+      "OMN",
+      "QAT",
+      "ARE",
+      "YEM"
+    ],
+    "coordinates": [
+      45.0792,
+      23.8859
+    ],
+    "flagUrl": "https://flagcdn.com/sa.svg"
+  },
+  {
+    "id": "SGP",
+    "numericId": "702",
+    "name": "Singapore",
+    "officialName": "Republic of Singapore",
+    "aliases": [
+      "Singapore"
+    ],
+    "capital": "Singapore",
+    "capitalAliases": [
+      "Singapore"
+    ],
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "flagEmoji": "🇸🇬",
+    "population": 5637000,
+    "areaSqKm": 728,
+    "currency": {
+      "code": "SGD",
+      "name": "Singapore Dollar",
+      "symbol": "S$"
+    },
+    "borders": [],
+    "coordinates": [
+      103.8198,
+      1.3521
+    ],
+    "flagUrl": "https://flagcdn.com/sg.svg"
+  },
+  {
+    "id": "KOR",
+    "numericId": "410",
+    "name": "South Korea",
+    "officialName": "Republic of Korea",
+    "aliases": [
+      "South Korea",
+      "ROK",
+      "Korea"
+    ],
+    "capital": "Seoul",
+    "capitalAliases": [
+      "Seoul"
+    ],
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "flagEmoji": "🇰🇷",
+    "population": 51638809,
+    "areaSqKm": 100210,
+    "currency": {
+      "code": "KRW",
+      "name": "South Korean Won",
+      "symbol": "₩"
+    },
+    "borders": [
+      "PRK"
+    ],
+    "coordinates": [
+      127.7669,
+      35.9078
+    ],
+    "flagUrl": "https://flagcdn.com/ko.svg"
+  },
+  {
+    "id": "LKA",
+    "numericId": "144",
+    "name": "Sri Lanka",
+    "officialName": "Democratic Socialist Republic of Sri Lanka",
+    "aliases": [
+      "Sri Lanka",
+      "Ceylon"
+    ],
+    "capital": "Sri Jayawardenepura Kotte",
+    "capitalAliases": [
+      "Colombo",
+      "Kotte",
+      "Sri Jayawardenepura Kotte"
+    ],
+    "continent": "Asia",
+    "subregion": "Southern Asia",
+    "flagEmoji": "🇱🇰",
+    "population": 22181000,
+    "areaSqKm": 65610,
+    "currency": {
+      "code": "LKR",
+      "name": "Sri Lankan Rupee",
+      "symbol": "Rs"
+    },
+    "borders": [],
+    "coordinates": [
+      80.7718,
+      7.8731
+    ],
+    "flagUrl": "https://flagcdn.com/lk.svg"
+  },
+  {
+    "id": "SYR",
+    "numericId": "760",
+    "name": "Syria",
+    "officialName": "Syrian Arab Republic",
+    "aliases": [
+      "Syria"
+    ],
+    "capital": "Damascus",
+    "capitalAliases": [
+      "Damascus"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇸🇾",
+    "population": 22125249,
+    "areaSqKm": 185180,
+    "currency": {
+      "code": "SYP",
+      "name": "Syrian Pound",
+      "symbol": "£S"
+    },
+    "borders": [
+      "IRQ",
+      "ISR",
+      "JOR",
+      "LBN",
+      "TUR"
+    ],
+    "coordinates": [
+      38.9968,
+      34.8021
+    ],
+    "flagUrl": "https://flagcdn.com/sy.svg"
+  },
+  {
+    "id": "TWN",
+    "numericId": "158",
+    "name": "Taiwan",
+    "officialName": "Republic of China",
+    "aliases": [
+      "Taiwan",
+      "ROC",
+      "Chinese Taipei"
+    ],
+    "capital": "Taipei",
+    "capitalAliases": [
+      "Taipei"
+    ],
+    "continent": "Asia",
+    "subregion": "Eastern Asia",
+    "flagEmoji": "🇹🇼",
+    "population": 23894000,
+    "areaSqKm": 36193,
+    "currency": {
+      "code": "TWD",
+      "name": "New Taiwan Dollar",
+      "symbol": "NT$"
+    },
+    "borders": [],
+    "coordinates": [
+      120.9605,
+      23.6978
+    ],
+    "flagUrl": "https://flagcdn.com/tw.svg"
+  },
+  {
+    "id": "TJK",
+    "numericId": "762",
+    "name": "Tajikistan",
+    "officialName": "Republic of Tajikistan",
+    "aliases": [
+      "Tajikistan"
+    ],
+    "capital": "Dushanbe",
+    "capitalAliases": [
+      "Dushanbe"
+    ],
+    "continent": "Asia",
+    "subregion": "Central Asia",
+    "flagEmoji": "🇹🇯",
+    "population": 9952764,
+    "areaSqKm": 143100,
+    "currency": {
+      "code": "TJS",
+      "name": "Tajikistani Somoni",
+      "symbol": "ЅМ"
+    },
+    "borders": [
+      "AFG",
+      "CHN",
+      "KGZ",
+      "UZB"
+    ],
+    "coordinates": [
+      71.2761,
+      38.861
+    ],
+    "flagUrl": "https://flagcdn.com/tj.svg"
+  },
+  {
+    "id": "THA",
+    "numericId": "764",
+    "name": "Thailand",
+    "officialName": "Kingdom of Thailand",
+    "aliases": [
+      "Thailand",
+      "Siam"
+    ],
+    "capital": "Bangkok",
+    "capitalAliases": [
+      "Bangkok",
+      "Krung Thep"
+    ],
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "flagEmoji": "🇹🇭",
+    "population": 71697030,
+    "areaSqKm": 513120,
+    "currency": {
+      "code": "THB",
+      "name": "Thai Baht",
+      "symbol": "฿"
+    },
+    "borders": [
+      "MMR",
+      "KHM",
+      "LAO",
+      "MYS"
+    ],
+    "coordinates": [
+      100.9925,
+      15.87
+    ],
+    "flagUrl": "https://flagcdn.com/th.svg"
+  },
+  {
+    "id": "TLS",
+    "numericId": "626",
+    "name": "Timor-Leste",
+    "officialName": "Democratic Republic of Timor-Leste",
+    "aliases": [
+      "Timor-Leste",
+      "East Timor"
+    ],
+    "capital": "Dili",
+    "capitalAliases": [
+      "Dili"
+    ],
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "flagEmoji": "🇹🇱",
+    "population": 1341296,
+    "areaSqKm": 14874,
+    "currency": {
+      "code": "USD",
+      "name": "United States Dollar",
+      "symbol": "$"
+    },
+    "borders": [
+      "IDN"
+    ],
+    "coordinates": [
+      125.7275,
+      -8.8742
+    ],
+    "flagUrl": "https://flagcdn.com/tl.svg"
+  },
+  {
+    "id": "TUR",
+    "numericId": "792",
+    "name": "Turkey",
+    "officialName": "Republic of Turkey",
+    "aliases": [
+      "Turkey",
+      "Turkiye"
+    ],
+    "capital": "Ankara",
+    "capitalAliases": [
+      "Ankara"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇹🇷",
+    "population": 85279553,
+    "areaSqKm": 783562,
+    "currency": {
+      "code": "TRY",
+      "name": "Turkish Lira",
+      "symbol": "₺"
+    },
+    "borders": [
+      "ARM",
+      "AZE",
+      "BGR",
+      "GEO",
+      "GRC",
+      "IRN",
+      "IRQ",
+      "SYR"
+    ],
+    "coordinates": [
+      35.2433,
+      38.9637
+    ],
+    "flagUrl": "https://flagcdn.com/tu.svg"
+  },
+  {
+    "id": "TKM",
+    "numericId": "795",
+    "name": "Turkmenistan",
+    "officialName": "Turkmenistan",
+    "aliases": [
+      "Turkmenistan"
+    ],
+    "capital": "Ashgabat",
+    "capitalAliases": [
+      "Ashgabat"
+    ],
+    "continent": "Asia",
+    "subregion": "Central Asia",
+    "flagEmoji": "🇹🇲",
+    "population": 6430770,
+    "areaSqKm": 488100,
+    "currency": {
+      "code": "TMT",
+      "name": "Turkmenistani Manat",
+      "symbol": "m"
+    },
+    "borders": [
+      "AFG",
+      "IRN",
+      "KAZ",
+      "UZB"
+    ],
+    "coordinates": [
+      59.5563,
+      38.9697
+    ],
+    "flagUrl": "https://flagcdn.com/tk.svg"
+  },
+  {
+    "id": "ARE",
+    "numericId": "784",
+    "name": "United Arab Emirates",
+    "officialName": "United Arab Emirates",
+    "aliases": [
+      "United Arab Emirates",
+      "UAE"
+    ],
+    "capital": "Abu Dhabi",
+    "capitalAliases": [
+      "Abu Dhabi"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇦🇪",
+    "population": 9441129,
+    "areaSqKm": 83600,
+    "currency": {
+      "code": "AED",
+      "name": "United Arab Emirates Dirham",
+      "symbol": "د.إ"
+    },
+    "borders": [
+      "OMN",
+      "SAU"
+    ],
+    "coordinates": [
+      53.8478,
+      23.4241
+    ],
+    "flagUrl": "https://flagcdn.com/ar.svg"
+  },
+  {
+    "id": "UZB",
+    "numericId": "860",
+    "name": "Uzbekistan",
+    "officialName": "Republic of Uzbekistan",
+    "aliases": [
+      "Uzbekistan"
+    ],
+    "capital": "Tashkent",
+    "capitalAliases": [
+      "Tashkent"
+    ],
+    "continent": "Asia",
+    "subregion": "Central Asia",
+    "flagEmoji": "🇺🇿",
+    "population": 35648100,
+    "areaSqKm": 447400,
+    "currency": {
+      "code": "UZS",
+      "name": "Uzbekistani Som",
+      "symbol": "so'm"
+    },
+    "borders": [
+      "AFG",
+      "KAZ",
+      "KGZ",
+      "TJK",
+      "TKM"
+    ],
+    "coordinates": [
+      64.5853,
+      41.3775
+    ],
+    "flagUrl": "https://flagcdn.com/uz.svg"
+  },
+  {
+    "id": "VNM",
+    "numericId": "704",
+    "name": "Vietnam",
+    "officialName": "Socialist Republic of Vietnam",
+    "aliases": [
+      "Vietnam",
+      "Viet Nam"
+    ],
+    "capital": "Hanoi",
+    "capitalAliases": [
+      "Hanoi"
+    ],
+    "continent": "Asia",
+    "subregion": "South-Eastern Asia",
+    "flagEmoji": "🇻🇳",
+    "population": 98186856,
+    "areaSqKm": 331212,
+    "currency": {
+      "code": "VND",
+      "name": "Vietnamese Dong",
+      "symbol": "₫"
+    },
+    "borders": [
+      "KHM",
+      "CHN",
+      "LAO"
+    ],
+    "coordinates": [
+      108.2772,
+      14.0583
+    ],
+    "flagUrl": "https://flagcdn.com/vn.svg"
+  },
+  {
+    "id": "YEM",
+    "numericId": "887",
+    "name": "Yemen",
+    "officialName": "Republic of Yemen",
+    "aliases": [
+      "Yemen"
+    ],
+    "capital": "Sana'a",
+    "capitalAliases": [
+      "Sanaa",
+      "Aden"
+    ],
+    "continent": "Asia",
+    "subregion": "Western Asia",
+    "flagEmoji": "🇾🇪",
+    "population": 33696614,
+    "areaSqKm": 527968,
+    "currency": {
+      "code": "YER",
+      "name": "Yemeni Rial",
+      "symbol": "﷼"
+    },
+    "borders": [
+      "OMN",
+      "SAU"
+    ],
+    "coordinates": [
+      48.5164,
+      15.5527
+    ],
+    "flagUrl": "https://flagcdn.com/ye.svg"
+  },
+  {
+    "id": "ATG",
+    "numericId": "028",
+    "name": "Antigua and Barbuda",
+    "officialName": "Antigua and Barbuda",
+    "aliases": [
+      "Antigua and Barbuda",
+      "Antigua"
+    ],
+    "capital": "Saint John's",
+    "capitalAliases": [
+      "St Johns",
+      "Saint Johns"
+    ],
+    "continent": "North America",
+    "subregion": "Caribbean",
+    "flagEmoji": "🇦🇬",
+    "population": 93772,
+    "areaSqKm": 442,
+    "currency": {
+      "code": "XCD",
+      "name": "East Caribbean Dollar",
+      "symbol": "$"
+    },
+    "borders": [],
+    "coordinates": [
+      -61.7964,
+      17.0608
+    ],
+    "flagUrl": "https://flagcdn.com/at.svg"
+  },
+  {
+    "id": "BHS",
+    "numericId": "044",
+    "name": "Bahamas",
+    "officialName": "Commonwealth of The Bahamas",
+    "aliases": [
+      "Bahamas",
+      "The Bahamas"
+    ],
+    "capital": "Nassau",
+    "capitalAliases": [
+      "Nassau"
+    ],
+    "continent": "North America",
+    "subregion": "Caribbean",
+    "flagEmoji": "🇧🇸",
+    "population": 409984,
+    "areaSqKm": 13943,
+    "currency": {
+      "code": "BSD",
+      "name": "Bahamian Dollar",
+      "symbol": "B$"
+    },
+    "borders": [],
+    "coordinates": [
+      -77.3963,
+      25.0343
+    ],
+    "flagUrl": "https://flagcdn.com/bh.svg"
+  },
+  {
+    "id": "BRB",
+    "numericId": "052",
+    "name": "Barbados",
+    "officialName": "Barbados",
+    "aliases": [
+      "Barbados"
+    ],
+    "capital": "Bridgetown",
+    "capitalAliases": [
+      "Bridgetown"
+    ],
+    "continent": "North America",
+    "subregion": "Caribbean",
+    "flagEmoji": "🇧🇧",
+    "population": 281635,
+    "areaSqKm": 430,
+    "currency": {
+      "code": "BBD",
+      "name": "Barbadian Dollar",
+      "symbol": "Bds$"
+    },
+    "borders": [],
+    "coordinates": [
+      -59.5432,
+      13.1939
+    ],
+    "flagUrl": "https://flagcdn.com/br.svg"
+  },
+  {
+    "id": "BLZ",
+    "numericId": "084",
+    "name": "Belize",
+    "officialName": "Belize",
+    "aliases": [
+      "Belize",
+      "British Honduras"
+    ],
+    "capital": "Belmopan",
+    "capitalAliases": [
+      "Belmopan"
+    ],
+    "continent": "North America",
+    "subregion": "Central America",
+    "flagEmoji": "🇧🇿",
+    "population": 405272,
+    "areaSqKm": 22966,
+    "currency": {
+      "code": "BZD",
+      "name": "Belize Dollar",
+      "symbol": "BZ$"
+    },
+    "borders": [
+      "GTM",
+      "MEX"
+    ],
+    "coordinates": [
+      -88.4976,
+      17.1899
+    ],
+    "flagUrl": "https://flagcdn.com/bl.svg"
+  },
+  {
+    "id": "CAN",
+    "numericId": "124",
+    "name": "Canada",
+    "officialName": "Canada",
+    "aliases": [
+      "Canada"
+    ],
+    "capital": "Ottawa",
+    "capitalAliases": [
+      "Ottawa"
+    ],
+    "continent": "North America",
+    "subregion": "Northern America",
+    "flagEmoji": "🇨🇦",
+    "population": 38250000,
+    "areaSqKm": 9984670,
+    "currency": {
+      "code": "CAD",
+      "name": "Canadian Dollar",
+      "symbol": "C$"
+    },
+    "borders": [
+      "USA"
+    ],
+    "coordinates": [
+      -106.3468,
+      56.1304
+    ],
+    "flagUrl": "https://flagcdn.com/ca.svg"
+  },
+  {
+    "id": "CRI",
+    "numericId": "188",
+    "name": "Costa Rica",
+    "officialName": "Republic of Costa Rica",
+    "aliases": [
+      "Costa Rica"
+    ],
+    "capital": "San Jose",
+    "capitalAliases": [
+      "San Jose"
+    ],
+    "continent": "North America",
+    "subregion": "Central America",
+    "flagEmoji": "🇨🇷",
+    "population": 5180829,
+    "areaSqKm": 51100,
+    "currency": {
+      "code": "CRC",
+      "name": "Costa Rican Colon",
+      "symbol": "₡"
+    },
+    "borders": [
+      "NIC",
+      "PAN"
+    ],
+    "coordinates": [
+      -83.7534,
+      9.7489
+    ],
+    "flagUrl": "https://flagcdn.com/cr.svg"
+  },
+  {
+    "id": "CUB",
+    "numericId": "192",
+    "name": "Cuba",
+    "officialName": "Republic of Cuba",
+    "aliases": [
+      "Cuba"
+    ],
+    "capital": "Havana",
+    "capitalAliases": [
+      "La Habana",
+      "Havana"
+    ],
+    "continent": "North America",
+    "subregion": "Caribbean",
+    "flagEmoji": "🇨🇺",
+    "population": 11212191,
+    "areaSqKm": 109884,
+    "currency": {
+      "code": "CUP",
+      "name": "Cuban Peso",
+      "symbol": "₱"
+    },
+    "borders": [],
+    "coordinates": [
+      -77.7812,
+      21.5218
+    ],
+    "flagUrl": "https://flagcdn.com/cu.svg"
+  },
+  {
+    "id": "DMA",
+    "numericId": "212",
+    "name": "Dominica",
+    "officialName": "Commonwealth of Dominica",
+    "aliases": [
+      "Dominica"
+    ],
+    "capital": "Roseau",
+    "capitalAliases": [
+      "Roseau"
+    ],
+    "continent": "North America",
+    "subregion": "Caribbean",
+    "flagEmoji": "🇩🇲",
+    "population": 72737,
+    "areaSqKm": 751,
+    "currency": {
+      "code": "XCD",
+      "name": "East Caribbean Dollar",
+      "symbol": "$"
+    },
+    "borders": [],
+    "coordinates": [
+      -61.371,
+      15.415
+    ],
+    "flagUrl": "https://flagcdn.com/dm.svg"
+  },
+  {
+    "id": "DOM",
+    "numericId": "214",
+    "name": "Dominican Republic",
+    "officialName": "Dominican Republic",
+    "aliases": [
+      "Dominican Republic"
+    ],
+    "capital": "Santo Domingo",
+    "capitalAliases": [
+      "Santo Domingo"
+    ],
+    "continent": "North America",
+    "subregion": "Caribbean",
+    "flagEmoji": "🇩🇴",
+    "population": 11228821,
+    "areaSqKm": 48671,
+    "currency": {
+      "code": "DOP",
+      "name": "Dominican Peso",
+      "symbol": "RD$"
+    },
+    "borders": [
+      "HTI"
+    ],
+    "coordinates": [
+      -70.1627,
+      18.7357
+    ],
+    "flagUrl": "https://flagcdn.com/do.svg"
+  },
+  {
+    "id": "SLV",
+    "numericId": "222",
+    "name": "El Salvador",
+    "officialName": "Republic of El Salvador",
+    "aliases": [
+      "El Salvador"
+    ],
+    "capital": "San Salvador",
+    "capitalAliases": [
+      "San Salvador"
+    ],
+    "continent": "North America",
+    "subregion": "Central America",
+    "flagEmoji": "🇸🇻",
+    "population": 6336392,
+    "areaSqKm": 21041,
+    "currency": {
+      "code": "USD",
+      "name": "United States Dollar",
+      "symbol": "$"
+    },
+    "borders": [
+      "GTM",
+      "HND"
+    ],
+    "coordinates": [
+      -88.8965,
+      13.7942
+    ],
+    "flagUrl": "https://flagcdn.com/sl.svg"
+  },
+  {
+    "id": "GRD",
+    "numericId": "308",
+    "name": "Grenada",
+    "officialName": "Grenada",
+    "aliases": [
+      "Grenada"
+    ],
+    "capital": "St. George's",
+    "capitalAliases": [
+      "St Georges",
+      "Saint Georges"
+    ],
+    "continent": "North America",
+    "subregion": "Caribbean",
+    "flagEmoji": "🇬🇩",
+    "population": 125438,
+    "areaSqKm": 344,
+    "currency": {
+      "code": "XCD",
+      "name": "East Caribbean Dollar",
+      "symbol": "$"
+    },
+    "borders": [],
+    "coordinates": [
+      -61.6042,
+      12.1165
+    ],
+    "flagUrl": "https://flagcdn.com/gr.svg"
+  },
+  {
+    "id": "GTM",
+    "numericId": "320",
+    "name": "Guatemala",
+    "officialName": "Republic of Guatemala",
+    "aliases": [
+      "Guatemala"
+    ],
+    "capital": "Guatemala City",
+    "capitalAliases": [
+      "Guatemala City"
+    ],
+    "continent": "North America",
+    "subregion": "Central America",
+    "flagEmoji": "🇬🇹",
+    "population": 17843908,
+    "areaSqKm": 108889,
+    "currency": {
+      "code": "GTQ",
+      "name": "Guatemalan Quetzal",
+      "symbol": "Q"
+    },
+    "borders": [
+      "BLZ",
+      "SLV",
+      "HND",
+      "MEX"
+    ],
+    "coordinates": [
+      -90.2308,
+      15.7835
+    ],
+    "flagUrl": "https://flagcdn.com/gt.svg"
+  },
+  {
+    "id": "HTI",
+    "numericId": "332",
+    "name": "Haiti",
+    "officialName": "Republic of Haiti",
+    "aliases": [
+      "Haiti"
+    ],
+    "capital": "Port-au-Prince",
+    "capitalAliases": [
+      "Port au Prince"
+    ],
+    "continent": "North America",
+    "subregion": "Caribbean",
+    "flagEmoji": "🇭🇹",
+    "population": 11584996,
+    "areaSqKm": 27750,
+    "currency": {
+      "code": "HTG",
+      "name": "Haitian Gourde",
+      "symbol": "G"
+    },
+    "borders": [
+      "DOM"
+    ],
+    "coordinates": [
+      -72.2852,
+      18.9712
+    ],
+    "flagUrl": "https://flagcdn.com/ht.svg"
+  },
+  {
+    "id": "HND",
+    "numericId": "340",
+    "name": "Honduras",
+    "officialName": "Republic of Honduras",
+    "aliases": [
+      "Honduras"
+    ],
+    "capital": "Tegucigalpa",
+    "capitalAliases": [
+      "Tegucigalpa"
+    ],
+    "continent": "North America",
+    "subregion": "Central America",
+    "flagEmoji": "🇭🇳",
+    "population": 10432860,
+    "areaSqKm": 112492,
+    "currency": {
+      "code": "HNL",
+      "name": "Honduran Lempira",
+      "symbol": "L"
+    },
+    "borders": [
+      "GTM",
+      "SLV",
+      "NIC"
+    ],
+    "coordinates": [
+      -86.2419,
+      15.2
+    ],
+    "flagUrl": "https://flagcdn.com/hn.svg"
+  },
+  {
+    "id": "JAM",
+    "numericId": "388",
+    "name": "Jamaica",
+    "officialName": "Jamaica",
+    "aliases": [
+      "Jamaica"
+    ],
+    "capital": "Kingston",
+    "capitalAliases": [
+      "Kingston"
+    ],
+    "continent": "North America",
+    "subregion": "Caribbean",
+    "flagEmoji": "🇯🇲",
+    "population": 2827377,
+    "areaSqKm": 10991,
+    "currency": {
+      "code": "JMD",
+      "name": "Jamaican Dollar",
+      "symbol": "J$"
+    },
+    "borders": [],
+    "coordinates": [
+      -77.2975,
+      18.1096
+    ],
+    "flagUrl": "https://flagcdn.com/ja.svg"
+  },
+  {
+    "id": "MEX",
+    "numericId": "484",
+    "name": "Mexico",
+    "officialName": "United Mexican States",
+    "aliases": [
+      "Mexico",
+      "Estados Unidos Mexicanos"
+    ],
+    "capital": "Mexico City",
+    "capitalAliases": [
+      "Mexico City",
+      "CDMX"
+    ],
+    "continent": "North America",
+    "subregion": "North America",
+    "flagEmoji": "🇲🇽",
+    "population": 127500000,
+    "areaSqKm": 1964375,
+    "currency": {
+      "code": "MXN",
+      "name": "Mexican Peso",
+      "symbol": "$"
+    },
+    "borders": [
+      "BLZ",
+      "GTM",
+      "USA"
+    ],
+    "coordinates": [
+      -102.5528,
+      23.6345
+    ],
+    "flagUrl": "https://flagcdn.com/me.svg"
+  },
+  {
+    "id": "NIC",
+    "numericId": "558",
+    "name": "Nicaragua",
+    "officialName": "Republic of Nicaragua",
+    "aliases": [
+      "Nicaragua"
+    ],
+    "capital": "Managua",
+    "capitalAliases": [
+      "Managua"
+    ],
+    "continent": "North America",
+    "subregion": "Central America",
+    "flagEmoji": "🇳🇮",
+    "population": 6948392,
+    "areaSqKm": 130373,
+    "currency": {
+      "code": "NIO",
+      "name": "Nicaraguan Cordoba",
+      "symbol": "C$"
+    },
+    "borders": [
+      "CRI",
+      "HND"
+    ],
+    "coordinates": [
+      -85.2072,
+      12.8654
+    ],
+    "flagUrl": "https://flagcdn.com/ni.svg"
+  },
+  {
+    "id": "PAN",
+    "numericId": "591",
+    "name": "Panama",
+    "officialName": "Republic of Panama",
+    "aliases": [
+      "Panama"
+    ],
+    "capital": "Panama City",
+    "capitalAliases": [
+      "Panama City"
+    ],
+    "continent": "North America",
+    "subregion": "Central America",
+    "flagEmoji": "🇵🇦",
+    "population": 4408581,
+    "areaSqKm": 75417,
+    "currency": {
+      "code": "PAB",
+      "name": "Panamanian Balboa",
+      "symbol": "B/."
+    },
+    "borders": [
+      "COL",
+      "CRI"
+    ],
+    "coordinates": [
+      -80.7821,
+      8.538
+    ],
+    "flagUrl": "https://flagcdn.com/pa.svg"
+  },
+  {
+    "id": "KNA",
+    "numericId": "659",
+    "name": "Saint Kitts and Nevis",
+    "officialName": "Federation of Saint Christopher and Nevis",
+    "aliases": [
+      "Saint Kitts and Nevis",
+      "St Kitts and Nevis"
+    ],
+    "capital": "Basseterre",
+    "capitalAliases": [
+      "Basseterre"
+    ],
+    "continent": "North America",
+    "subregion": "Caribbean",
+    "flagEmoji": "🇰🇳",
+    "population": 47657,
+    "areaSqKm": 261,
+    "currency": {
+      "code": "XCD",
+      "name": "East Caribbean Dollar",
+      "symbol": "$"
+    },
+    "borders": [],
+    "coordinates": [
+      -62.783,
+      17.3578
+    ],
+    "flagUrl": "https://flagcdn.com/kn.svg"
+  },
+  {
+    "id": "LCA",
+    "numericId": "662",
+    "name": "Saint Lucia",
+    "officialName": "Saint Lucia",
+    "aliases": [
+      "Saint Lucia",
+      "St Lucia"
+    ],
+    "capital": "Castries",
+    "capitalAliases": [
+      "Castries"
+    ],
+    "continent": "North America",
+    "subregion": "Caribbean",
+    "flagEmoji": "🇱🇨",
+    "population": 179857,
+    "areaSqKm": 616,
+    "currency": {
+      "code": "XCD",
+      "name": "East Caribbean Dollar",
+      "symbol": "$"
+    },
+    "borders": [],
+    "coordinates": [
+      -60.9789,
+      13.9094
+    ],
+    "flagUrl": "https://flagcdn.com/lc.svg"
+  },
+  {
+    "id": "VCT",
+    "numericId": "670",
+    "name": "Saint Vincent and the Grenadines",
+    "officialName": "Saint Vincent and the Grenadines",
+    "aliases": [
+      "Saint Vincent and the Grenadines",
+      "St Vincent",
+      "SVG"
+    ],
+    "capital": "Kingstown",
+    "capitalAliases": [
+      "Kingstown"
+    ],
+    "continent": "North America",
+    "subregion": "Caribbean",
+    "flagEmoji": "🇻🇨",
+    "population": 103948,
+    "areaSqKm": 389,
+    "currency": {
+      "code": "XCD",
+      "name": "East Caribbean Dollar",
+      "symbol": "$"
+    },
+    "borders": [],
+    "coordinates": [
+      -61.2872,
+      12.9843
+    ],
+    "flagUrl": "https://flagcdn.com/vc.svg"
+  },
+  {
+    "id": "TTO",
+    "numericId": "780",
+    "name": "Trinidad and Tobago",
+    "officialName": "Republic of Trinidad and Tobago",
+    "aliases": [
+      "Trinidad and Tobago",
+      "Trinidad"
+    ],
+    "capital": "Port of Spain",
+    "capitalAliases": [
+      "Port of Spain"
+    ],
+    "continent": "North America",
+    "subregion": "Caribbean",
+    "flagEmoji": "🇹🇹",
+    "population": 1531044,
+    "areaSqKm": 5128,
+    "currency": {
+      "code": "TTD",
+      "name": "Trinidad and Tobago Dollar",
+      "symbol": "TT$"
+    },
+    "borders": [],
+    "coordinates": [
+      -61.2225,
+      10.6918
+    ],
+    "flagUrl": "https://flagcdn.com/tt.svg"
+  },
+  {
+    "id": "USA",
+    "numericId": "840",
+    "name": "United States",
+    "officialName": "United States of America",
+    "aliases": [
+      "United States",
+      "USA",
+      "United States of America",
+      "US",
+      "America"
+    ],
+    "capital": "Washington, D.C.",
+    "capitalAliases": [
+      "Washington",
+      "Washington DC"
+    ],
+    "continent": "North America",
+    "subregion": "Northern America",
+    "flagEmoji": "🇺🇸",
+    "population": 333287557,
+    "areaSqKm": 9833517,
+    "currency": {
+      "code": "USD",
+      "name": "United States Dollar",
+      "symbol": "$"
+    },
+    "borders": [
+      "CAN",
+      "MEX"
+    ],
+    "coordinates": [
+      -95.7129,
+      37.0902
+    ],
+    "flagUrl": "https://flagcdn.com/us.svg"
+  },
+  {
+    "id": "ARG",
+    "numericId": "032",
+    "name": "Argentina",
+    "officialName": "Argentine Republic",
+    "aliases": [
+      "Argentina"
+    ],
+    "capital": "Buenos Aires",
+    "capitalAliases": [
+      "Buenos Aires"
+    ],
+    "continent": "South America",
+    "subregion": "South America",
+    "flagEmoji": "🇦🇷",
+    "population": 45808747,
+    "areaSqKm": 2780400,
+    "currency": {
+      "code": "ARS",
+      "name": "Argentine Peso",
+      "symbol": "$"
+    },
+    "borders": [
+      "BOL",
+      "BRA",
+      "CHL",
+      "PRY",
+      "URY"
+    ],
+    "coordinates": [
+      -63.6167,
+      -38.4161
+    ],
+    "flagUrl": "https://flagcdn.com/ar.svg"
+  },
+  {
+    "id": "BOL",
+    "numericId": "068",
+    "name": "Bolivia",
+    "officialName": "Plurinational State of Bolivia",
+    "aliases": [
+      "Bolivia"
+    ],
+    "capital": "Sucre",
+    "capitalAliases": [
+      "Sucre",
+      "La Paz"
+    ],
+    "continent": "South America",
+    "subregion": "South America",
+    "flagEmoji": "🇧🇴",
+    "population": 12224110,
+    "areaSqKm": 1098581,
+    "currency": {
+      "code": "BOB",
+      "name": "Bolivian Boliviano",
+      "symbol": "Bs."
+    },
+    "borders": [
+      "ARG",
+      "BRA",
+      "CHL",
+      "PRY",
+      "PER"
+    ],
+    "coordinates": [
+      -63.5887,
+      -16.2902
+    ],
+    "flagUrl": "https://flagcdn.com/bo.svg"
+  },
+  {
+    "id": "BRA",
+    "numericId": "076",
+    "name": "Brazil",
+    "officialName": "Federative Republic of Brazil",
+    "aliases": [
+      "Brazil",
+      "Brasil"
+    ],
+    "capital": "Brasilia",
+    "capitalAliases": [
+      "Brasilia"
+    ],
+    "continent": "South America",
+    "subregion": "South America",
+    "flagEmoji": "🇧🇷",
+    "population": 215300000,
+    "areaSqKm": 8515767,
+    "currency": {
+      "code": "BRL",
+      "name": "Brazilian Real",
+      "symbol": "R$"
+    },
+    "borders": [
+      "ARG",
+      "BOL",
+      "COL",
+      "GUY",
+      "PRY",
+      "PER",
+      "SUR",
+      "URY",
+      "VEN"
+    ],
+    "coordinates": [
+      -51.9253,
+      -14.235
+    ],
+    "flagUrl": "https://flagcdn.com/br.svg"
+  },
+  {
+    "id": "CHL",
+    "numericId": "152",
+    "name": "Chile",
+    "officialName": "Republic of Chile",
+    "aliases": [
+      "Chile"
+    ],
+    "capital": "Santiago",
+    "capitalAliases": [
+      "Santiago"
+    ],
+    "continent": "South America",
+    "subregion": "South America",
+    "flagEmoji": "🇨🇱",
+    "population": 19603733,
+    "areaSqKm": 756102,
+    "currency": {
+      "code": "CLP",
+      "name": "Chilean Peso",
+      "symbol": "$"
+    },
+    "borders": [
+      "ARG",
+      "BOL",
+      "PER"
+    ],
+    "coordinates": [
+      -71.543,
+      -35.6751
+    ],
+    "flagUrl": "https://flagcdn.com/ch.svg"
+  },
+  {
+    "id": "COL",
+    "numericId": "170",
+    "name": "Colombia",
+    "officialName": "Republic of Colombia",
+    "aliases": [
+      "Colombia"
+    ],
+    "capital": "Bogota",
+    "capitalAliases": [
+      "Bogota"
+    ],
+    "continent": "South America",
+    "subregion": "South America",
+    "flagEmoji": "🇨🇴",
+    "population": 51874024,
+    "areaSqKm": 1141748,
+    "currency": {
+      "code": "COP",
+      "name": "Colombian Peso",
+      "symbol": "$"
+    },
+    "borders": [
+      "BRA",
+      "ECU",
+      "PAN",
+      "PER",
+      "VEN"
+    ],
+    "coordinates": [
+      -74.2973,
+      4.5709
+    ],
+    "flagUrl": "https://flagcdn.com/co.svg"
+  },
+  {
+    "id": "ECU",
+    "numericId": "218",
+    "name": "Ecuador",
+    "officialName": "Republic of Ecuador",
+    "aliases": [
+      "Ecuador"
+    ],
+    "capital": "Quito",
+    "capitalAliases": [
+      "Quito"
+    ],
+    "continent": "South America",
+    "subregion": "South America",
+    "flagEmoji": "🇪🇨",
+    "population": 18001000,
+    "areaSqKm": 283561,
+    "currency": {
+      "code": "USD",
+      "name": "United States Dollar",
+      "symbol": "$"
+    },
+    "borders": [
+      "COL",
+      "PER"
+    ],
+    "coordinates": [
+      -78.1834,
+      -1.8312
+    ],
+    "flagUrl": "https://flagcdn.com/ec.svg"
+  },
+  {
+    "id": "GUY",
+    "numericId": "328",
+    "name": "Guyana",
+    "officialName": "Co-operative Republic of Guyana",
+    "aliases": [
+      "Guyana",
+      "British Guiana"
+    ],
+    "capital": "Georgetown",
+    "capitalAliases": [
+      "Georgetown"
+    ],
+    "continent": "South America",
+    "subregion": "South America",
+    "flagEmoji": "🇬🇾",
+    "population": 808726,
+    "areaSqKm": 214969,
+    "currency": {
+      "code": "GYD",
+      "name": "Guyanese Dollar",
+      "symbol": "G$"
+    },
+    "borders": [
+      "BRA",
+      "SUR",
+      "VEN"
+    ],
+    "coordinates": [
+      -58.9302,
+      4.8604
+    ],
+    "flagUrl": "https://flagcdn.com/gu.svg"
+  },
+  {
+    "id": "PRY",
+    "numericId": "600",
+    "name": "Paraguay",
+    "officialName": "Republic of Paraguay",
+    "aliases": [
+      "Paraguay"
+    ],
+    "capital": "Asuncion",
+    "capitalAliases": [
+      "Asuncion"
+    ],
+    "continent": "South America",
+    "subregion": "South America",
+    "flagEmoji": "🇵🇾",
+    "population": 6780744,
+    "areaSqKm": 406752,
+    "currency": {
+      "code": "PYG",
+      "name": "Paraguayan Guarani",
+      "symbol": "₲"
+    },
+    "borders": [
+      "ARG",
+      "BOL",
+      "BRA"
+    ],
+    "coordinates": [
+      -58.4438,
+      -23.4425
+    ],
+    "flagUrl": "https://flagcdn.com/pr.svg"
+  },
+  {
+    "id": "PER",
+    "numericId": "604",
+    "name": "Peru",
+    "officialName": "Republic of Peru",
+    "aliases": [
+      "Peru"
+    ],
+    "capital": "Lima",
+    "capitalAliases": [
+      "Lima"
+    ],
+    "continent": "South America",
+    "subregion": "South America",
+    "flagEmoji": "🇵🇪",
+    "population": 34049588,
+    "areaSqKm": 1285216,
+    "currency": {
+      "code": "PEN",
+      "name": "Peruvian Sol",
+      "symbol": "S/."
+    },
+    "borders": [
+      "BOL",
+      "BRA",
+      "CHL",
+      "COL",
+      "ECU"
+    ],
+    "coordinates": [
+      -75.0152,
+      -9.1899
+    ],
+    "flagUrl": "https://flagcdn.com/pe.svg"
+  },
+  {
+    "id": "SUR",
+    "numericId": "740",
+    "name": "Suriname",
+    "officialName": "Republic of Suriname",
+    "aliases": [
+      "Suriname",
+      "Dutch Guiana"
+    ],
+    "capital": "Paramaribo",
+    "capitalAliases": [
+      "Paramaribo"
+    ],
+    "continent": "South America",
+    "subregion": "South America",
+    "flagEmoji": "🇸🇷",
+    "population": 618040,
+    "areaSqKm": 163820,
+    "currency": {
+      "code": "SRD",
+      "name": "Surinamese Dollar",
+      "symbol": "$"
+    },
+    "borders": [
+      "BRA",
+      "GUY"
+    ],
+    "coordinates": [
+      -56.0278,
+      3.9193
+    ],
+    "flagUrl": "https://flagcdn.com/su.svg"
+  },
+  {
+    "id": "URY",
+    "numericId": "858",
+    "name": "Uruguay",
+    "officialName": "Oriental Republic of Uruguay",
+    "aliases": [
+      "Uruguay"
+    ],
+    "capital": "Montevideo",
+    "capitalAliases": [
+      "Montevideo"
+    ],
+    "continent": "South America",
+    "subregion": "South America",
+    "flagEmoji": "🇺🇾",
+    "population": 3422794,
+    "areaSqKm": 176215,
+    "currency": {
+      "code": "UYU",
+      "name": "Uruguayan Peso",
+      "symbol": "$U"
+    },
+    "borders": [
+      "ARG",
+      "BRA"
+    ],
+    "coordinates": [
+      -55.7658,
+      -32.5228
+    ],
+    "flagUrl": "https://flagcdn.com/ur.svg"
+  },
+  {
+    "id": "VEN",
+    "numericId": "862",
+    "name": "Venezuela",
+    "officialName": "Bolivarian Republic of Venezuela",
+    "aliases": [
+      "Venezuela"
+    ],
+    "capital": "Caracas",
+    "capitalAliases": [
+      "Caracas"
+    ],
+    "continent": "South America",
+    "subregion": "South America",
+    "flagEmoji": "🇻🇪",
+    "population": 28302000,
+    "areaSqKm": 916445,
+    "currency": {
+      "code": "VES",
+      "name": "Venezuelan Bolivar",
+      "symbol": "Bs.D"
+    },
+    "borders": [
+      "BRA",
+      "COL",
+      "GUY"
+    ],
+    "coordinates": [
+      -66.5897,
+      6.4238
+    ],
+    "flagUrl": "https://flagcdn.com/ve.svg"
+  },
+  {
+    "id": "AUS",
+    "numericId": "036",
+    "name": "Australia",
+    "officialName": "Commonwealth of Australia",
+    "aliases": [
+      "Australia",
+      "Oz"
+    ],
+    "capital": "Canberra",
+    "capitalAliases": [
+      "Canberra"
+    ],
+    "continent": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "flagEmoji": "🇦🇺",
+    "population": 25687041,
+    "areaSqKm": 7692024,
+    "currency": {
+      "code": "AUD",
+      "name": "Australian Dollar",
+      "symbol": "A$"
+    },
+    "borders": [],
+    "coordinates": [
+      133.7751,
+      -25.2744
+    ],
+    "flagUrl": "https://flagcdn.com/au.svg"
+  },
+  {
+    "id": "FJI",
+    "numericId": "242",
+    "name": "Fiji",
+    "officialName": "Republic of Fiji",
+    "aliases": [
+      "Fiji"
+    ],
+    "capital": "Suva",
+    "capitalAliases": [
+      "Suva"
+    ],
+    "continent": "Oceania",
+    "subregion": "Melanesia",
+    "flagEmoji": "🇫🇯",
+    "population": 929766,
+    "areaSqKm": 18274,
+    "currency": {
+      "code": "FJD",
+      "name": "Fijian Dollar",
+      "symbol": "FJ$"
+    },
+    "borders": [],
+    "coordinates": [
+      178.065,
+      -17.7134
+    ],
+    "flagUrl": "https://flagcdn.com/fj.svg"
+  },
+  {
+    "id": "KIR",
+    "numericId": "296",
+    "name": "Kiribati",
+    "officialName": "Republic of Kiribati",
+    "aliases": [
+      "Kiribati"
+    ],
+    "capital": "South Tarawa",
+    "capitalAliases": [
+      "Tarawa",
+      "South Tarawa"
+    ],
+    "continent": "Oceania",
+    "subregion": "Micronesia",
+    "flagEmoji": "🇰🇮",
+    "population": 131232,
+    "areaSqKm": 811,
+    "currency": {
+      "code": "AUD",
+      "name": "Australian Dollar",
+      "symbol": "A$"
+    },
+    "borders": [],
+    "coordinates": [
+      -157.363,
+      1.8709
+    ],
+    "flagUrl": "https://flagcdn.com/ki.svg"
+  },
+  {
+    "id": "MHL",
+    "numericId": "584",
+    "name": "Marshall Islands",
+    "officialName": "Republic of the Marshall Islands",
+    "aliases": [
+      "Marshall Islands"
+    ],
+    "capital": "Majuro",
+    "capitalAliases": [
+      "Majuro"
+    ],
+    "continent": "Oceania",
+    "subregion": "Micronesia",
+    "flagEmoji": "🇲🇭",
+    "population": 41569,
+    "areaSqKm": 181,
+    "currency": {
+      "code": "USD",
+      "name": "United States Dollar",
+      "symbol": "$"
+    },
+    "borders": [],
+    "coordinates": [
+      171.1845,
+      7.1315
+    ],
+    "flagUrl": "https://flagcdn.com/mh.svg"
+  },
+  {
+    "id": "FSM",
+    "numericId": "583",
+    "name": "Micronesia",
+    "officialName": "Federated States of Micronesia",
+    "aliases": [
+      "Micronesia",
+      "FSM"
+    ],
+    "capital": "Palikir",
+    "capitalAliases": [
+      "Palikir"
+    ],
+    "continent": "Oceania",
+    "subregion": "Micronesia",
+    "flagEmoji": "🇫🇲",
+    "population": 114164,
+    "areaSqKm": 702,
+    "currency": {
+      "code": "USD",
+      "name": "United States Dollar",
+      "symbol": "$"
+    },
+    "borders": [],
+    "coordinates": [
+      150.5508,
+      7.4256
+    ],
+    "flagUrl": "https://flagcdn.com/fs.svg"
+  },
+  {
+    "id": "NRU",
+    "numericId": "520",
+    "name": "Nauru",
+    "officialName": "Republic of Nauru",
+    "aliases": [
+      "Nauru"
+    ],
+    "capital": "Yaren",
+    "capitalAliases": [
+      "Yaren"
+    ],
+    "continent": "Oceania",
+    "subregion": "Micronesia",
+    "flagEmoji": "🇳🇷",
+    "population": 12511,
+    "areaSqKm": 21,
+    "currency": {
+      "code": "AUD",
+      "name": "Australian Dollar",
+      "symbol": "A$"
+    },
+    "borders": [],
+    "coordinates": [
+      166.9315,
+      -0.5228
+    ],
+    "flagUrl": "https://flagcdn.com/nr.svg"
+  },
+  {
+    "id": "NZL",
+    "numericId": "554",
+    "name": "New Zealand",
+    "officialName": "New Zealand",
+    "aliases": [
+      "New Zealand",
+      "Aotearoa",
+      "NZ"
+    ],
+    "capital": "Wellington",
+    "capitalAliases": [
+      "Wellington"
+    ],
+    "continent": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "flagEmoji": "🇳🇿",
+    "population": 5124100,
+    "areaSqKm": 270467,
+    "currency": {
+      "code": "NZD",
+      "name": "New Zealand Dollar",
+      "symbol": "NZ$"
+    },
+    "borders": [],
+    "coordinates": [
+      174.886,
+      -40.9006
+    ],
+    "flagUrl": "https://flagcdn.com/nz.svg"
+  },
+  {
+    "id": "PLW",
+    "numericId": "585",
+    "name": "Palau",
+    "officialName": "Republic of Palau",
+    "aliases": [
+      "Palau"
+    ],
+    "capital": "Ngerulmud",
+    "capitalAliases": [
+      "Ngerulmud",
+      "Koror"
+    ],
+    "continent": "Oceania",
+    "subregion": "Micronesia",
+    "flagEmoji": "🇵🇼",
+    "population": 18055,
+    "areaSqKm": 459,
+    "currency": {
+      "code": "USD",
+      "name": "United States Dollar",
+      "symbol": "$"
+    },
+    "borders": [],
+    "coordinates": [
+      134.5825,
+      7.515
+    ],
+    "flagUrl": "https://flagcdn.com/pl.svg"
+  },
+  {
+    "id": "PNG",
+    "numericId": "598",
+    "name": "Papua New Guinea",
+    "officialName": "Independent State of Papua New Guinea",
+    "aliases": [
+      "Papua New Guinea",
+      "PNG"
+    ],
+    "capital": "Port Moresby",
+    "capitalAliases": [
+      "Port Moresby"
+    ],
+    "continent": "Oceania",
+    "subregion": "Melanesia",
+    "flagEmoji": "🇵🇬",
+    "population": 10142619,
+    "areaSqKm": 462840,
+    "currency": {
+      "code": "PGK",
+      "name": "Papua New Guinean Kina",
+      "symbol": "K"
+    },
+    "borders": [
+      "IDN"
+    ],
+    "coordinates": [
+      143.9555,
+      -6.315
+    ],
+    "flagUrl": "https://flagcdn.com/pn.svg"
+  },
+  {
+    "id": "WSM",
+    "numericId": "882",
+    "name": "Samoa",
+    "officialName": "Independent State of Samoa",
+    "aliases": [
+      "Samoa",
+      "Western Samoa"
+    ],
+    "capital": "Apia",
+    "capitalAliases": [
+      "Apia"
+    ],
+    "continent": "Oceania",
+    "subregion": "Polynesia",
+    "flagEmoji": "🇼🇸",
+    "population": 222382,
+    "areaSqKm": 2842,
+    "currency": {
+      "code": "WST",
+      "name": "Samoan Tala",
+      "symbol": "T"
+    },
+    "borders": [],
+    "coordinates": [
+      -172.1046,
+      -13.759
+    ],
+    "flagUrl": "https://flagcdn.com/ws.svg"
+  },
+  {
+    "id": "SLB",
+    "numericId": "090",
+    "name": "Solomon Islands",
+    "officialName": "Solomon Islands",
+    "aliases": [
+      "Solomon Islands"
+    ],
+    "capital": "Honiara",
+    "capitalAliases": [
+      "Honiara"
+    ],
+    "continent": "Oceania",
+    "subregion": "Melanesia",
+    "flagEmoji": "🇸🇧",
+    "population": 724273,
+    "areaSqKm": 28896,
+    "currency": {
+      "code": "SBD",
+      "name": "Solomon Islands Dollar",
+      "symbol": "SI$"
+    },
+    "borders": [],
+    "coordinates": [
+      160.1562,
+      -9.6457
+    ],
+    "flagUrl": "https://flagcdn.com/sl.svg"
+  },
+  {
+    "id": "TON",
+    "numericId": "776",
+    "name": "Tonga",
+    "officialName": "Kingdom of Tonga",
+    "aliases": [
+      "Tonga"
+    ],
+    "capital": "Nuku'alofa",
+    "capitalAliases": [
+      "Nukualofa",
+      "Nuku'alofa"
+    ],
+    "continent": "Oceania",
+    "subregion": "Polynesia",
+    "flagEmoji": "🇹🇴",
+    "population": 106858,
+    "areaSqKm": 747,
+    "currency": {
+      "code": "TOP",
+      "name": "Tongan Pa'anga",
+      "symbol": "T$"
+    },
+    "borders": [],
+    "coordinates": [
+      -175.1982,
+      -21.179
+    ],
+    "flagUrl": "https://flagcdn.com/to.svg"
+  },
+  {
+    "id": "TUV",
+    "numericId": "798",
+    "name": "Tuvalu",
+    "officialName": "Tuvalu",
+    "aliases": [
+      "Tuvalu",
+      "Ellice Islands"
+    ],
+    "capital": "Funafuti",
+    "capitalAliases": [
+      "Funafuti"
+    ],
+    "continent": "Oceania",
+    "subregion": "Polynesia",
+    "flagEmoji": "🇹🇻",
+    "population": 11204,
+    "areaSqKm": 26,
+    "currency": {
+      "code": "AUD",
+      "name": "Australian Dollar",
+      "symbol": "A$"
+    },
+    "borders": [],
+    "coordinates": [
+      177.6493,
+      -7.1095
+    ],
+    "flagUrl": "https://flagcdn.com/tu.svg"
+  },
+  {
+    "id": "VUT",
+    "numericId": "548",
+    "name": "Vanuatu",
+    "officialName": "Republic of Vanuatu",
+    "aliases": [
+      "Vanuatu",
+      "New Hebrides"
+    ],
+    "capital": "Port Vila",
+    "capitalAliases": [
+      "Port Vila"
+    ],
+    "continent": "Oceania",
+    "subregion": "Melanesia",
+    "flagEmoji": "🇻🇺",
+    "population": 326740,
+    "areaSqKm": 12189,
+    "currency": {
+      "code": "VUV",
+      "name": "Vanuatu Vatu",
+      "symbol": "VT"
+    },
+    "borders": [],
+    "coordinates": [
+      166.9592,
+      -15.3767
+    ],
+    "flagUrl": "https://flagcdn.com/vu.svg"
+  }
+];
+
+export const COUNTRIES_BY_ID = new Map<string, CountryRecord>(
+  COUNTRIES.map((c) => [c.id, c])
+);
+
+export const COUNTRIES_BY_NUMERIC_ID = new Map<string, CountryRecord>(
+  COUNTRIES.map((c) => [String(Number(c.numericId) || c.numericId), c])
+);
